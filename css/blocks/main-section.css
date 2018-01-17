@@ -23,12 +23,15 @@
 }
 
 .main__img {
+    margin-top: 25px;
+    flex: 2;
     width: 417px;
     height: 424px;
     background: url("../../img/decor/main-burger.png") center center no-repeat;
 }
 
 .main__content {
+    flex: 2;
     margin-left: 11px;
 }
 
