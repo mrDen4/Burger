@@ -6,7 +6,7 @@
 
 .main-section {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #3b4043;
     background: url("../../img/back/main-bg.png")  no-repeat;
     background-size: cover;
