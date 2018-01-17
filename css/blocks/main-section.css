@@ -1,0 +1,87 @@
+/*@viewport {*/
+    /*width: device-width;*/
+    /*zoom: 1;*/
+    /*max-zoom: 2;*/
+/*}*/
+
+.main-section {
+    width: 100%;
+    height: 100%;
+    background: #3b4043;
+    background: url("../../img/back/main-bg.png")  no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    align-items: center;
+    margin: 0 auto;
+    width: 980px;
+}
+
+.main {
+    display: flex;
+}
+
+.main__img {
+    width: 417px;
+    height: 424px;
+    background: url("../../img/decor/main-burger.png") center center no-repeat;
+}
+
+.main__content {
+    margin-left: 11px;
+}
+
+.main__tittle {
+    font-family: 'gagalin', Arial, serif;
+    color: #f9b43b;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 175px;
+}
+
+.main__text {
+    font-family: 'lifehack', Arial, serif;
+    color: white;
+    font-size: 65px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.main__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__item {
+    margin-bottom: 15px;
+}
+
+.main__el-active {
+    background: url("../../img/decor/el-active.png");
+    width: 16px;
+    height: 16px;
+}
+
+.main__el {
+    background: url("../../img/decor/el.png");
+    width: 6px;
+    height: 6px;
+}
+
+.main__link-next {
+    display: flex;
+    margin-top: 95px;
+    justify-content: center;
+}
+
+.main__scroll-logo {
+    width: 30px;
+    height: 15px;
+    background: url("../../img/decor/arrow-scroll.png") center center no-repeat;
+}
