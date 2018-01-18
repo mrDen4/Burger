@@ -1,0 +1,15 @@
+.staff {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.staff__ava {
+    min-width: 277px;
+    min-height: 327px;
+    margin: 0;
+}
+
+.staff__ava:hover {
+    
+}
