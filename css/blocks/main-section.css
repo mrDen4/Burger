@@ -1,9 +1,3 @@
-/*@viewport {*/
-    /*width: device-width;*/
-    /*zoom: 1;*/
-    /*max-zoom: 2;*/
-/*}*/
-
 .main-section {
     width: 100%;
     height: 100vh;
@@ -12,7 +6,7 @@
     background-size: cover;
 }
 
-.main-container {
+.container {
     align-items: center;
     margin: 0 auto;
     width: 980px;
