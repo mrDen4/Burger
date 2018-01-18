@@ -4,6 +4,8 @@
     background: #3b4043;
     background: url("../../img/back/main-bg.png")  no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
 .container {
