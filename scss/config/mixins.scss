@@ -1,0 +1,12 @@
+//Round
+@mixin circle($width, $color) {
+  width: $width;
+  color: $color;
+  border-radius: $width/2;
+  background-color: $color;
+}
+
+//Для адаптива
+@function rem($px) {
+  @return $px / 16px+0rem;
+}

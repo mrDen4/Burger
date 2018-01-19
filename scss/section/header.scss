@@ -1,0 +1,59 @@
+.header {
+  position: absolute;
+  left: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+}
+
+.header__item {
+  margin-left: 30px;
+
+  &:before {
+    color: white;
+    content: '•';
+    padding-right: 10px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:first-child {
+  }
+}
+
+.header__item-link {
+  font-family: 'Ubuntu-Medium', Arial, serif;
+  color: #ffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.header__btn {
+  font-family: 'Ubuntu-Medium', Arial, serif;
+  margin-left: 15px;
+  width: 100px;
+  height: 38px;
+  background: $bg-btn;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: $bg-btn;
+  border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+.logo {
+  margin-right: 200px;
+}

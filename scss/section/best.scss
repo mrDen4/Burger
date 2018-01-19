@@ -1,0 +1,58 @@
+.best {
+  height: 100vh;
+  background: url("../img/back/best-sec-bg.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.best__tittle {
+  font-family: 'gagalin', Arial, serif;
+  color: #2f3234;
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+.best__list {
+  display: flex;
+  list-style: none;
+}
+
+.best__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+}
+
+.best__item-img {
+  width: 100px;
+  height: 90px;
+
+  &-meat {
+    background: url("../img/decor/meat.png") center center no-repeat;
+  }
+
+  &-hand {
+    background: url("../img/decor/hand.png") center center no-repeat;
+  }
+
+  &-natural {
+    background: url("../img/decor/natural.png") center center no-repeat;
+  }
+}
+
+.best__item-tittle {
+  font-family: 'lifehack', Arial, serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.best__item-text {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 14px;
+  font-weight: 300;
+}

@@ -1,0 +1,14 @@
+.bot-scroll__link-next {
+  display: flex;
+  margin-top: 95px;
+  justify-content: center;
+  position: fixed;
+  bottom: 5%;
+  right: 50%;
+}
+
+.bot-scroll__scroll-logo {
+  width: 30px;
+  height: 15px;
+  background: url("../img/decor/arrow-scroll.png") center center no-repeat;
+}
