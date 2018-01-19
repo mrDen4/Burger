@@ -1,15 +1,83 @@
-.staff {
+.staff-section {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
 
-.staff__ava {
-    min-width: 277px;
-    min-height: 327px;
+.staff-section__ava {
+    min-width: 275px;
+    min-height: 325px;
     margin: 0;
+    padding: 0;
 }
 
-.staff__ava:hover {
-    
+.staff-section__ava-1 {
+    background: url("../../img/ava/1.png") center center no-repeat;
+}
+
+.staff-section__ava-2 {
+    background: url("../../img/ava/2.png") center center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-section__ava-2-more {
+    max-width: 222px;
+    max-height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.staff-section__ava-2-tittle {
+    font-family: 'gagalin', Arial, serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.staff-section__ava-2-text {
+    font-family: 'Ubuntu-Light', Arial, serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    line-height: 24px;
+}
+
+.staff-section__ava-2-btn {
+    width: 110px;
+    height: 35px;
+    background: #2f3234;
+    border: #2f3234;
+    border-radius: 5px;
+    color: white;
+}
+
+.staff-section__ava-2:hover {
+
+}
+
+.staff-section__ava-3 {
+    background: url("../../img/ava/3.png") center center no-repeat;
+}
+
+.staff-section__ava-4 {
+    background: url("../../img/ava/4.png") center center no-repeat;
+}
+
+.staff-section__ava-5 {
+    background: url("../../img/ava/5.png") center center no-repeat;
+}
+
+.staff-section__ava-6 {
+    background: url("../../img/ava/6.png") center center no-repeat;
+}
+
+.staff-section__ava-7 {
+    background: url("../../img/ava/7.png") center center no-repeat;
+}
+
+.staff-section__ava-8 {
+    background: url("../../img/ava/8.png") center center no-repeat;
 }
