@@ -5,18 +5,24 @@
 }
 
 .staff-section__ava {
-    min-width: 275px;
+    min-width: 25%;
     min-height: 325px;
     margin: 0;
     padding: 0;
 }
 
+.staff-section__ava:hover {
+    filter: grayscale(1);
+}
+
 .staff-section__ava-1 {
     background: url("../../img/ava/1.png") center center no-repeat;
+    background-size: cover;
 }
 
 .staff-section__ava-2 {
     background: url("../../img/ava/2.png") center center no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,24 +66,30 @@
 
 .staff-section__ava-3 {
     background: url("../../img/ava/3.png") center center no-repeat;
+    background-size: cover;
 }
 
 .staff-section__ava-4 {
     background: url("../../img/ava/4.png") center center no-repeat;
+    background-size: cover;
 }
 
 .staff-section__ava-5 {
     background: url("../../img/ava/5.png") center center no-repeat;
+    background-size: cover;
 }
 
 .staff-section__ava-6 {
     background: url("../../img/ava/6.png") center center no-repeat;
+    background-size: cover;
 }
 
 .staff-section__ava-7 {
     background: url("../../img/ava/7.png") center center no-repeat;
+    background-size: cover;
 }
 
 .staff-section__ava-8 {
     background: url("../../img/ava/8.png") center center no-repeat;
+    background-size: cover;
 }
