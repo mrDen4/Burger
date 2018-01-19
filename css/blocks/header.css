@@ -6,6 +6,13 @@
 
 .header__list {
     display: flex;
+    list-style: none;
+}
+
+.header__item:before {
+    color: white;
+    content: '•';
+    padding-right: 10px;
 }
 
 .header__item {
