@@ -147,16 +147,17 @@ ul {
 
 .header {
   position: absolute;
-  left: 20%;
+  min-width: 940px;
+  right: 27%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .header__list {
   display: -webkit-box;
@@ -198,7 +199,7 @@ ul {
     cursor: pointer; }
 
 .logo {
-  margin-right: 200px; }
+  margin-right: auto; }
 
 .natural {
   width: 100%;
