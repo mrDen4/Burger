@@ -117,7 +117,11 @@ ul {
   right: 1%; }
 
 .side-nav__item {
-  margin-bottom: 15px; }
+  margin-bottom: 5px; }
+  .side-nav__item:hover .side-nav__el {
+    background: url("../img/decor/el-active.png");
+    width: 16px;
+    height: 16px; }
 
 .side-nav__active {
   background: url("../img/decor/el-active.png");
@@ -125,9 +129,9 @@ ul {
   height: 16px; }
 
 .side-nav__el {
-  background: url("../img/decor/el.png");
-  width: 6px;
-  height: 6px; }
+  background: url("../img/decor/el.png") center center no-repeat;
+  width: 16px;
+  height: 16px; }
 
 .bot-scroll__link-next {
   display: -webkit-box;

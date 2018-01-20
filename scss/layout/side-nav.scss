@@ -8,7 +8,15 @@
 }
 
 .side-nav__item {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+
+  &:hover {
+    .side-nav__el {
+      background: url("../img/decor/el-active.png");
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
 
 .side-nav__active {
@@ -18,7 +26,7 @@
 }
 
 .side-nav__el {
-  background: url("../img/decor/el.png");
-  width: 6px;
-  height: 6px;
+  background: url("../img/decor/el.png") center center no-repeat;
+  width: 16px;
+  height: 16px;
 }
