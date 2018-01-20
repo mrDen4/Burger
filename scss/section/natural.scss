@@ -16,10 +16,6 @@
   background: url("../img/decor/main-burger.png") center center no-repeat;
 }
 
-//.natural__content {
-//  margin-left: 11px;
-//}
-
 .natural__tittle {
   font-family: 'gagalin', Arial, serif;
   color: #f9b43b;
@@ -36,14 +32,4 @@
   font-size: 65px;
   font-weight: 500;
   margin: 0;
-}
-
-.side-nav__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  right: 5%;
 }

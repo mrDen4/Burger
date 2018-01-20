@@ -13,10 +13,6 @@
   justify-content: center;
   align-items: center;
 
-  &:hover {
-    filter: grayscale(1);
-  }
-
   &-1 {
     background: url("../img/ava/1.png") center center no-repeat;
     background-size: cover;
@@ -87,6 +83,10 @@
   &-8 {
     background: url("../img/ava/8.png") center center no-repeat;
     background-size: cover;
+  }
+
+  &:hover {
+    filter: grayscale(1);
   }
 }
 

@@ -101,6 +101,21 @@ ul {
   -ms-flex-direction: row;
   flex-direction: row; }
 
+.side-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 10%;
+  right: 1%; }
+
 .side-nav__item {
   margin-bottom: 15px; }
 
@@ -118,7 +133,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 95px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -224,22 +238,6 @@ ul {
   font-weight: 500;
   margin: 0; }
 
-.side-nav__list {
-  list-style: none;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: fixed;
-  right: 5%; }
-
 .best {
   height: 100vh;
   background: url("../img/back/best-sec-bg.png");
@@ -321,9 +319,6 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .staff-section__ava:hover {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1); }
   .staff-section__ava-1 {
     background: url("../img/ava/1.png") center center no-repeat;
     background-size: cover; }
@@ -379,3 +374,6 @@ ul {
   .staff-section__ava-8 {
     background: url("../img/ava/8.png") center center no-repeat;
     background-size: cover; }
+  .staff-section__ava:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
