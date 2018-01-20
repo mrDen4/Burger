@@ -340,7 +340,8 @@ ul {
       flex-direction: column;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      opacity: 0; }
     .staff-section__ava-2-tittle {
       font-family: 'gagalin', Arial, serif;
       font-size: 14px;
@@ -359,6 +360,8 @@ ul {
       border: #2f3234;
       border-radius: 5px;
       color: white; }
+    .staff-section__ava-2:hover .staff-section__ava-2-more {
+      opacity: 1; }
   .staff-section__ava-3 {
     background: url("../img/ava/3.png") center center no-repeat;
     background-size: cover; }

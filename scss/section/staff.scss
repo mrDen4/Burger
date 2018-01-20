@@ -28,6 +28,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      opacity: 0;
     }
 
     &-tittle {
@@ -52,6 +53,12 @@
       border: #2f3234;
       border-radius: 5px;
       color: white;
+    }
+
+    &:hover {
+      .staff-section__ava-2-more {
+        opacity: 1;
+      }
     }
   }
 
