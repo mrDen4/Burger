@@ -147,7 +147,7 @@ ul {
 
 .header {
   position: absolute;
-  left: 16%;
+  left: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,6 +172,8 @@ ul {
     padding-right: 10px; }
   .header__item:hover {
     text-decoration: underline; }
+  .header__item:first-child:before {
+    display: none; }
 
 .header__item-link {
   font-family: 'Ubuntu-Medium', Arial, serif;
