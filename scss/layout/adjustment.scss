@@ -17,6 +17,11 @@
   flex-direction: column;
 }
 
+.header__container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .natural__container {
   flex-direction: row;
 }

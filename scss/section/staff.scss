@@ -5,13 +5,53 @@
 }
 
 .staff-section__ava {
-  min-width: 25%;
+  width: 25%;
   min-height: 325px;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: grayscale(1);
+
+  &-more {
+    max-width: 222px;
+    max-height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+  }
+
+  &-tittle {
+    font-family: 'gagalin', Arial, serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+  }
+
+  &-text {
+    font-family: 'Ubuntu-Light', Arial, serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    line-height: 24px;
+  }
+
+  &-btn {
+    width: 110px;
+    height: 35px;
+    background: #2f3234;
+    border: #2f3234;
+    border-radius: 5px;
+    color: white;
+  }
+
+  &:hover {
+    .staff-section__ava-more {
+      opacity: 1;
+    }
+  }
 
   &-1 {
     background: url("../img/ava/1.png") center center no-repeat;
@@ -21,45 +61,6 @@
   &-2 {
     background: url("../img/ava/2.png") center center no-repeat;
     background-size: cover;
-
-    &-more {
-      max-width: 222px;
-      max-height: 325px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      opacity: 0;
-    }
-
-    &-tittle {
-      font-family: 'gagalin', Arial, serif;
-      font-size: 14px;
-      font-weight: 400;
-      color: white;
-    }
-
-    &-text {
-      font-family: 'Ubuntu-Light', Arial, serif;
-      font-size: 14px;
-      font-weight: 300;
-      color: white;
-      line-height: 24px;
-    }
-
-    &-btn {
-      width: 110px;
-      height: 35px;
-      background: #2f3234;
-      border: #2f3234;
-      border-radius: 5px;
-      color: white;
-    }
-
-    &:hover {
-      .staff-section__ava-2-more {
-        opacity: 1;
-      }
-    }
   }
 
   &-3 {
@@ -90,10 +91,6 @@
   &-8 {
     background: url("../img/ava/8.png") center center no-repeat;
     background-size: cover;
-  }
-
-  &:hover {
-    filter: grayscale(1);
   }
 }
 
