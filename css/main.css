@@ -82,6 +82,7 @@ ul {
   height: 100vh; }
 
 .wrap__header {
+  width: 950px;
   top: 1px;
   position: absolute;
   display: -webkit-box;
@@ -180,6 +181,9 @@ ul {
   width: 30px;
   height: 15px;
   background: url("../img/decor/arrow-scroll.png") center center no-repeat; }
+
+.header {
+  width: 100%; }
 
 .header__list {
   display: -webkit-box;
