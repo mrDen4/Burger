@@ -1,0 +1,90 @@
+.menu {
+  background: url("../img/back/menu.png");
+  background-size: cover;
+  position: relative;
+}
+
+.menu__tittle {
+  color: white;
+  margin-top: 111px;
+  margin-left: 95px;
+}
+
+.menu__accordion {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  display: flex;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+.menu__link-for {
+  width: 80px;
+  height: 100vh;
+  writing-mode: vertical-rl;
+  background-size: cover;
+
+  &-meat {
+    background: url("../img/back/for-meat-man.png");
+    background-size: cover;
+  }
+
+  &-veg {
+    background: url("../img/back/for-veg.png");
+    background-size: cover;
+  }
+
+  &-diet {
+    background: url("../img/back/for-diet.png");
+    background-size: cover;
+  }
+}
+
+.menu__subtittle {
+  font-family: 'gagalin', Arial, serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+
+.menu__more {
+  background-color: $black;
+  opacity: .9;
+  width: 540px;
+
+  &-meat {
+    //width: 0;
+    //overflow: hidden;
+  }
+
+  &-veg {
+    width: 0;
+    overflow: hidden;
+  }
+
+  &-diet {
+    width: 0;
+    overflow: hidden;
+  }
+}
+
+.menu__more-text {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  margin: 60px auto;
+  max-width: 470px;
+}

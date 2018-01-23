@@ -114,6 +114,12 @@ ul {
   -ms-flex-direction: row;
   flex-direction: row; }
 
+.menu__container {
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  margin: 0; }
+
 .team__container {
   background-color: #2f3234;
   opacity: .9;
@@ -330,7 +336,7 @@ ul {
 
 .team__description {
   position: absolute;
-  top: 1px;
+  top: 0px;
   right: 0;
   width: 50vw; }
 
@@ -378,6 +384,78 @@ ul {
 .team__more-tittle {
   font-family: 'Ubuntu-B', Arial, Serif;
   font-weight: 700; }
+
+.menu {
+  background: url("../img/back/menu.png");
+  background-size: cover;
+  position: relative; }
+
+.menu__tittle {
+  color: white;
+  margin-top: 111px;
+  margin-left: 95px; }
+
+.menu__accordion {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__link {
+  text-decoration: none; }
+
+.menu__link-for {
+  width: 80px;
+  height: 100vh;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  background-size: cover; }
+  .menu__link-for-meat {
+    background: url("../img/back/for-meat-man.png");
+    background-size: cover; }
+  .menu__link-for-veg {
+    background: url("../img/back/for-veg.png");
+    background-size: cover; }
+  .menu__link-for-diet {
+    background: url("../img/back/for-diet.png");
+    background-size: cover; }
+
+.menu__subtittle {
+  font-family: 'gagalin', Arial, serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+  margin: 0; }
+
+.menu__more {
+  background-color: #2f3234;
+  opacity: .9;
+  width: 540px; }
+  .menu__more-veg {
+    width: 0;
+    overflow: hidden; }
+  .menu__more-diet {
+    width: 0;
+    overflow: hidden; }
+
+.menu__more-text {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  margin: 60px auto;
+  max-width: 470px; }
 
 .staff {
   height: 100vh;
