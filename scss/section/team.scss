@@ -1,10 +1,23 @@
 .team {
   background: url("../img/back/team.png");
   background-size: cover;
+  position: relative;
 }
 
 .team__description {
   position: absolute;
+  top: 1px;
+  right: 0;
+  width: 50vw;
+}
+
+.team__tittle {
+  margin-top: 113px;
+  margin-bottom: 45px;
+}
+
+.team__item {
+  margin-bottom: 35px;
 }
 
 .team__link {
@@ -20,16 +33,26 @@
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
+  margin-right: 10px;
 }
 
 .team__link-more {
-  font-family: 'Ubuntu-Medium', Arial, serif;
+  font-family: 'Ubuntu-Light', Arial, serif;
   font-weight: 300;
   font-size: 14px;
   color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+}
+
+.team__link-content {
+  max-width: 210px;
 }
 
 .team__more-tittle {
+  font-family: 'Ubuntu-B', Arial, Serif;
   font-weight: 700;
 }

@@ -10,15 +10,7 @@
 
 .section {
   height: 100vh;
-}
-
-.wrap__header {
-  width: 950px;
-  top: 1px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 .container {
@@ -37,6 +29,14 @@
 
 .natural__container {
   flex-direction: row;
+}
+
+.team__container {
+  background-color: $black;
+  opacity: .9;
+  width: 50vw;
+  height: 100vh;
+  justify-content: normal;
 }
 
 .title {
