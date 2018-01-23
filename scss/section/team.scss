@@ -1,0 +1,35 @@
+.team {
+  background: url("../img/back/team.png");
+  background-size: cover;
+}
+
+.team__description {
+  position: absolute;
+}
+
+.team__link {
+  font-family: 'gagalin', Arial, serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.team__more-ava {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team__link-more {
+  font-family: 'Ubuntu-Medium', Arial, serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+  display: flex;
+}
+
+.team__more-tittle {
+  font-weight: 700;
+}

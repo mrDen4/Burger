@@ -11,43 +11,45 @@
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
-                <div class="logo">
-                    <a href="index.html" class="logo__link">
-                        <img src="img/logo/logo.png" alt="Mr burger">
-                    </a>
+                <div class="wrap__header">
+                    <div class="logo">
+                        <a href="index.html" class="logo__link">
+                            <img src="img/logo/logo.png" alt="Mr burger">
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">О нас</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Бургеры</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Команда</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Меню</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Отзывы</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__btn">
+                        Заказать
+                    </button>
                 </div>
-                <nav class="nav">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a href="#" class="header__item-link">О нас</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__item-link">Бургеры</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__item-link">Команда</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__item-link">Меню</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__item-link">Отзывы</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__item-link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="header__btn">
-                    Заказать
-                </button>
             </div>
         </header>
         <section class="section natural">
             <div class="container natural__container">
                 <div class="natural__img"></div>
                 <div class="natural__content">
-                    <h1 class="natural__tittle">Мы делаем</h1>
+                    <h1 class="title natural__tittle">Мы делаем</h1>
                     <p class="natural__text">натуральные бургеры</p>
                 </div>
                 <div class="bot-scroll">
@@ -59,7 +61,7 @@
         </section>
         <section class="section best">
             <div class="container best__container">
-                <h1 class="best__tittle">Мы лучшие</h1>
+                <h1 class="title best__tittle">Мы лучшие</h1>
                 <ul class="best__list">
                     <li class="best__item">
                         <div class="best__item-img best__item-img-meat"></div>
@@ -79,64 +81,92 @@
                 </ul>
             </div>
         </section>
-        <div class="staff-section">
-            <div class="staff-section__ava staff-section__ava-1">
-                <div class="staff-section__ava-more">
-                    <h2 class="staff-section__ava-tittle">Константин Спилберг</h2>
-                    <p class="staff-section__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff-section__ava-btn">Подробнее</button>
+        <section class="section team">
+            <div class="container team__container">
+                <div class="team__description">
+                    <h1 class="title team__tittle">Команда</h1>
+                    <ul class="team__lis">
+                        <li class="team__item">
+                            <a href="#" class="team__link">Дэниэл Редклиф</a>
+                        </li>
+                        <li class="team__item">
+                            <a href="#" class="team__link">Ричард Джеймс</a>
+                            <div class="team__link-more">
+                                <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
+                                <div class="team__link-content">
+                                    <h2 class="team__more-tittle">Оператор</h2>
+                                    <p class="team__more-text">С радостью поможет подобрать идеальный бургер и оформить заказ.  </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <a href="#" class="team__link">Джейк Финн</a>
+                        </li>
+                        <li class="team__item">
+                            <a href="#" class="team__link">Николай Иванов</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="staff-section__ava staff-section__ava-2">
-                <div class="staff-section__ava-more">
-                    <h2 class="staff-section__ava-tittle">Константин Спилберг</h2>
-                    <p class="staff-section__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff-section__ava-btn">Подробнее</button>
+        </section>
+        <section class="section staff">
+            <div class="staff__ava staff__ava-1">
+                <div class="staff__ava-more">
+                    <h2 class="staff__ava-tittle">Константин Спилберг</h2>
+                    <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff-section__ava staff-section__ava-3">
-                <div class="staff-section__ava-more">
-                    <h2 class="staff-section__ava-tittle">Константин Спилберг</h2>
-                    <p class="staff-section__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff-section__ava-btn">Подробнее</button>
+            <div class="staff__ava staff__ava-2">
+                <div class="staff__ava-more">
+                    <h2 class="staff__ava-tittle">Константин Спилберг</h2>
+                    <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff-section__ava staff-section__ava-4">
-                <div class="staff-section__ava-more">
-                    <h2 class="staff-section__ava-tittle">Константин Спилберг</h2>
-                    <p class="staff-section__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff-section__ava-btn">Подробнее</button>
+            <div class="staff__ava staff__ava-3">
+                <div class="staff__ava-more">
+                    <h2 class="staff__ava-tittle">Константин Спилберг</h2>
+                    <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff-section__ava staff-section__ava-5">
-                <div class="staff-section__ava-more">
-                    <h2 class="staff-section__ava-tittle">Константин Спилберг</h2>
-                    <p class="staff-section__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff-section__ava-btn">Подробнее</button>
+            <div class="staff__ava staff__ava-4">
+                <div class="staff__ava-more">
+                    <h2 class="staff__ava-tittle">Константин Спилберг</h2>
+                    <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff-section__ava staff-section__ava-6">
-                <div class="staff-section__ava-more">
-                    <h2 class="staff-section__ava-tittle">Константин Спилберг</h2>
-                    <p class="staff-section__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff-section__ava-btn">Подробнее</button>
+            <div class="staff__ava staff__ava-5">
+                <div class="staff__ava-more">
+                    <h2 class="staff__ava-tittle">Константин Спилберг</h2>
+                    <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff-section__ava staff-section__ava-7">
-                <div class="staff-section__ava-more">
-                    <h2 class="staff-section__ava-tittle">Константин Спилберг</h2>
-                    <p class="staff-section__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff-section__ava-btn">Подробнее</button>
+            <div class="staff__ava staff__ava-6">
+                <div class="staff__ava-more">
+                    <h2 class="staff__ava-tittle">Константин Спилберг</h2>
+                    <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff-section__ava staff-section__ava-8">
-                <div class="staff-section__ava-more">
-                    <h2 class="staff-section__ava-tittle">Константин Спилберг</h2>
-                    <p class="staff-section__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff-section__ava-btn">Подробнее</button>
+            <div class="staff__ava staff__ava-7">
+                <div class="staff__ava-more">
+                    <h2 class="staff__ava-tittle">Константин Спилберг</h2>
+                    <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-        </div>
+            <div class="staff__ava staff__ava-8">
+                <div class="staff__ava-more">
+                    <h2 class="staff__ava-tittle">Константин Спилберг</h2>
+                    <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    <button class="staff__ava-btn">Подробнее</button>
+                </div>
+            </div>
+        </section>
     </div>
     <div class="side-nav">
         <ul class="side-nav__list">

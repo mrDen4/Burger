@@ -78,6 +78,22 @@ ul {
   height: 100%;
   min-height: 650px; }
 
+.section {
+  height: 100vh; }
+
+.wrap__header {
+  top: 1px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -109,6 +125,13 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row; }
+
+.title {
+  font-family: 'gagalin', Arial, serif;
+  color: #f9b43b;
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: 400; }
 
 .side-nav__list {
   display: -webkit-box;
@@ -157,10 +180,6 @@ ul {
   width: 30px;
   height: 15px;
   background: url("../img/decor/arrow-scroll.png") center center no-repeat; }
-
-.header {
-  position: absolute;
-  min-width: 940px; }
 
 .header__list {
   display: -webkit-box;
@@ -303,7 +322,39 @@ ul {
   font-size: 14px;
   font-weight: 300; }
 
-.staff-section {
+.team {
+  background: url("../img/back/team.png");
+  background-size: cover; }
+
+.team__description {
+  position: absolute; }
+
+.team__link {
+  font-family: 'gagalin', Arial, serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none; }
+
+.team__more-ava {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.team__link-more {
+  font-family: 'Ubuntu-Medium', Arial, serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.team__more-tittle {
+  font-weight: 700; }
+
+.staff {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,7 +362,7 @@ ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.staff-section__ava {
+.staff__ava {
   width: 25%;
   min-height: 325px;
   margin: 0;
@@ -327,7 +378,7 @@ ul {
   align-items: center;
   -webkit-filter: grayscale(1);
   filter: grayscale(1); }
-  .staff-section__ava-more {
+  .staff__ava-more {
     max-width: 222px;
     max-height: 325px;
     display: -webkit-box;
@@ -341,47 +392,47 @@ ul {
     -ms-flex-pack: center;
     justify-content: center;
     opacity: 0; }
-  .staff-section__ava-tittle {
+  .staff__ava-tittle {
     font-family: 'gagalin', Arial, serif;
     font-size: 14px;
     font-weight: 400;
     color: white; }
-  .staff-section__ava-text {
+  .staff__ava-text {
     font-family: 'Ubuntu-Light', Arial, serif;
     font-size: 14px;
     font-weight: 300;
     color: white;
     line-height: 24px; }
-  .staff-section__ava-btn {
+  .staff__ava-btn {
     width: 110px;
     height: 35px;
     background: #2f3234;
     border: #2f3234;
     border-radius: 5px;
     color: white; }
-  .staff-section__ava:hover .staff-section__ava-more {
+  .staff__ava:hover .staff__ava-more {
     opacity: 1; }
-  .staff-section__ava-1 {
+  .staff__ava-1 {
     background: url("../img/ava/1.png") center center no-repeat;
     background-size: cover; }
-  .staff-section__ava-2 {
+  .staff__ava-2 {
     background: url("../img/ava/2.png") center center no-repeat;
     background-size: cover; }
-  .staff-section__ava-3 {
+  .staff__ava-3 {
     background: url("../img/ava/3.png") center center no-repeat;
     background-size: cover; }
-  .staff-section__ava-4 {
+  .staff__ava-4 {
     background: url("../img/ava/4.png") center center no-repeat;
     background-size: cover; }
-  .staff-section__ava-5 {
+  .staff__ava-5 {
     background: url("../img/ava/5.png") center center no-repeat;
     background-size: cover; }
-  .staff-section__ava-6 {
+  .staff__ava-6 {
     background: url("../img/ava/6.png") center center no-repeat;
     background-size: cover; }
-  .staff-section__ava-7 {
+  .staff__ava-7 {
     background: url("../img/ava/7.png") center center no-repeat;
     background-size: cover; }
-  .staff-section__ava-8 {
+  .staff__ava-8 {
     background: url("../img/ava/8.png") center center no-repeat;
     background-size: cover; }

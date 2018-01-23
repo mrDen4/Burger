@@ -1,10 +1,10 @@
-.staff-section {
+.staff {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
 }
 
-.staff-section__ava {
+.staff__ava {
   width: 25%;
   min-height: 325px;
   margin: 0;
@@ -48,7 +48,7 @@
   }
 
   &:hover {
-    .staff-section__ava-more {
+    .staff__ava-more {
       opacity: 1;
     }
   }

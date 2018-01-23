@@ -8,6 +8,18 @@
   min-height: 650px;
 }
 
+.section {
+  height: 100vh;
+}
+
+.wrap__header {
+  top: 1px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -24,4 +36,12 @@
 
 .natural__container {
   flex-direction: row;
+}
+
+.title {
+  font-family: 'gagalin', Arial, serif;
+  color: #f9b43b;
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
