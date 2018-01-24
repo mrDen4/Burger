@@ -72,7 +72,8 @@ ul {
 
 .wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 .maincontent {
   height: 100%;
@@ -119,6 +120,12 @@ ul {
   -ms-flex-align: normal;
   align-items: normal;
   margin: 0; }
+
+.footer__container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 .team__container {
   background-color: #2f3234;
@@ -227,7 +234,7 @@ ul {
   .header__btn:hover {
     cursor: pointer; }
 
-.logo {
+.header__logo {
   margin-right: auto; }
 
 .natural {
@@ -345,14 +352,11 @@ ul {
   margin-bottom: 45px; }
 
 .team__item {
-  margin-bottom: 35px; }
-
-.team__link {
+  margin-bottom: 35px;
   font-family: 'gagalin', Arial, serif;
   color: white;
   font-size: 14px;
-  font-weight: 400;
-  text-decoration: none; }
+  font-weight: 400; }
 
 .team__more-ava {
   width: 100px;
@@ -409,9 +413,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.menu__link {
-  text-decoration: none; }
 
 .menu__link-for {
   width: 80px;
@@ -480,7 +481,8 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   -webkit-filter: grayscale(1);
-  filter: grayscale(1); }
+  filter: grayscale(1);
+  background-size: cover; }
   .staff__ava-more {
     max-width: 222px;
     max-height: 325px;
@@ -515,27 +517,63 @@ ul {
     color: white; }
   .staff__ava:hover .staff__ava-more {
     opacity: 1; }
-  .staff__ava-1 {
-    background: url("../img/ava/1.png") center center no-repeat;
-    background-size: cover; }
-  .staff__ava-2 {
-    background: url("../img/ava/2.png") center center no-repeat;
-    background-size: cover; }
-  .staff__ava-3 {
-    background: url("../img/ava/3.png") center center no-repeat;
-    background-size: cover; }
-  .staff__ava-4 {
-    background: url("../img/ava/4.png") center center no-repeat;
-    background-size: cover; }
-  .staff__ava-5 {
-    background: url("../img/ava/5.png") center center no-repeat;
-    background-size: cover; }
-  .staff__ava-6 {
-    background: url("../img/ava/6.png") center center no-repeat;
-    background-size: cover; }
-  .staff__ava-7 {
-    background: url("../img/ava/7.png") center center no-repeat;
-    background-size: cover; }
-  .staff__ava-8 {
-    background: url("../img/ava/8.png") center center no-repeat;
-    background-size: cover; }
+
+.map {
+  background: url("../img/map.png");
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100vw; }
+
+.footer {
+  background: url("../img/back/footer.png");
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100vw; }
+
+.footer__contacts {
+  text-align: left;
+  margin-right: auto; }
+
+.footer__address {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: white; }
+
+.footer__tel {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #e35028; }
+
+.footer__socials {
+  text-align: right; }
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer__item {
+  margin-right: 20px; }
+
+.footer__soc {
+  width: 20px;
+  height: 20px; }
+  .footer__soc-vk {
+    background: url("../img/socials/vk.png") center center no-repeat; }
+  .footer__soc-fb {
+    background: url("../img/socials/fb.png") center center no-repeat; }
+  .footer__soc-inst {
+    background: url("../img/socials/inst.png") center center no-repeat; }
+  .footer__soc-tw {
+    background: url("../img/socials/tw.png") center center no-repeat; }

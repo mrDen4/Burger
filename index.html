@@ -11,10 +11,12 @@
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
-                <div class="logo">
-                    <a href="index.html" class="logo__link">
-                        <img src="img/logo/logo.png" alt="Mr burger">
-                    </a>
+                <div class="header__logo">
+                    <div class="logo">
+                        <a href="index.html" class="logo__link">
+                            <img src="img/logo/logo.png" alt="Mr burger">
+                        </a>
+                    </div>
                 </div>
                 <nav class="nav">
                     <ul class="header__list">
@@ -46,10 +48,10 @@
         <section class="section natural">
             <div class="container natural__container">
                 <div class="natural__img"></div>
-                <div class="natural__content">
-                    <h1 class="title natural__tittle">Мы делаем</h1>
-                    <p class="natural__text">натуральные бургеры</p>
-                </div>
+                <h1 class="natural__content">
+                    <div class="title natural__tittle">Мы делаем</div>
+                    <div class="natural__text">натуральные бургеры</div>
+                </h1>
                 <div class="bot-scroll">
                     <a href="#" class="bot-scroll__link-next">
                         <div class="bot-scroll__scroll-logo"></div>
@@ -59,7 +61,7 @@
         </section>
         <section class="section best">
             <div class="container best__container">
-                <h1 class="title best__tittle">Мы лучшие</h1>
+                <h2 class="title best__tittle">Мы лучшие</h2>
                 <ul class="best__list">
                     <li class="best__item">
                         <div class="best__item-img best__item-img-meat"></div>
@@ -86,7 +88,7 @@
                     <div class="team__accordion">
                         <ul class="team__lis">
                             <li class="team__item">
-                                <a href="#" class="team__link">Дэниэл Редклиф</a>
+                                Дэниэл Редклиф
                                 <div class="team__link-more">
                                     <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
                                     <div class="team__link-content">
@@ -96,7 +98,7 @@
                                 </div>
                             </li>
                             <li class="team__item">
-                                <a href="#" class="team__link">Ричард Джеймс</a>
+                                Ричард Джеймс
                                 <div class="team__link-more">
                                     <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
                                     <div class="team__link-content">
@@ -106,7 +108,7 @@
                                 </div>
                             </li>
                             <li class="team__item">
-                                <a href="#" class="team__link">Джейк Финн</a>
+                                Джейк Финн
                                 <div class="team__link-more">
                                     <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
                                     <div class="team__link-content">
@@ -116,7 +118,7 @@
                                 </div>
                             </li>
                             <li class="team__item">
-                                <a href="#" class="team__link">Николай Иванов</a>
+                                Николай Иванов
                                 <div class="team__link-more">
                                     <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
                                     <div class="team__link-content">
@@ -136,31 +138,25 @@
                 <div class="menu__accordion">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <div class="menu__link-for menu__link-for-meat">
-                                    <h2 class="menu__subtittle">Для мясоедов</h2>
-                                </div>
-                            </a>
+                            <div class="menu__link-for menu__link-for-meat">
+                                <h2 class="menu__subtittle">Для мясоедов</h2>
+                            </div>
                             <div class="menu__more menu__more-meat">
                                 <p class="menu__more-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eos esse quaerat quam sed voluptates. Aliquam eligendi excepturi, minima numquam obcaecati optio porro quos tempora? Beatae facere illum saepe tempore?</p>
                             </div>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <div class="menu__link-for menu__link-for-veg">
-                                    <h2 class="menu__subtittle">Вегетарианское</h2>
-                                </div>
-                            </a>
+                            <div class="menu__link-for menu__link-for-veg">
+                                <h2 class="menu__subtittle">Вегетарианское</h2>
+                            </div>
                             <div class="menu__more menu__more-veg">
                                 <p class="menu__more-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur consequuntur illo, illum impedit laborum natus, placeat praesentium provident quam quasi qui quis quo. At eum minima quisquam recusandae repellat.</p>
                             </div>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <div class="menu__link-for menu__link-for-diet">
-                                    <h2 class="menu__subtittle">Диетическое</h2>
-                                </div>
-                            </a>
+                            <div class="menu__link-for menu__link-for-diet">
+                                <h2 class="menu__subtittle">Диетическое</h2>
+                            </div>
                             <div class="menu__more menu__more-diet">
                                 <p class="menu__more-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid at beatae delectus doloribus earum eligendi esse fugiat harum ipsum itaque labore, provident qui quis saepe sapiente ut voluptatibus?</p>
                             </div>
@@ -170,56 +166,56 @@
             </div>
         </section>
         <section class="section staff">
-            <div class="staff__ava staff__ava-1">
+            <div class="staff__ava staff__ava-1" style="background-image: url('img/ava/1.png')">
                 <div class="staff__ava-more">
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                     <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff__ava staff__ava-2">
+            <div class="staff__ava staff__ava-2" style="background-image: url('img/ava/2.png')">
                 <div class="staff__ava-more">
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                     <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff__ava staff__ava-3">
+            <div class="staff__ava staff__ava-3" style="background-image: url('img/ava/3.png')">
                 <div class="staff__ava-more">
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                     <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff__ava staff__ava-4">
+            <div class="staff__ava staff__ava-4" style="background-image: url('img/ava/4.png')">
                 <div class="staff__ava-more">
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                     <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff__ava staff__ava-5">
+            <div class="staff__ava staff__ava-5" style="background-image: url('img/ava/5.png')">
                 <div class="staff__ava-more">
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                     <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff__ava staff__ava-6">
+            <div class="staff__ava staff__ava-6" style="background-image: url('img/ava/6.png')">
                 <div class="staff__ava-more">
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                     <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff__ava staff__ava-7">
+            <div class="staff__ava staff__ava-7" style="background-image: url('img/ava/7.png')">
                 <div class="staff__ava-more">
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                     <button class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
-            <div class="staff__ava staff__ava-8">
+            <div class="staff__ava staff__ava-8" style="background-image: url('img/ava/8.png')">
                 <div class="staff__ava-more">
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
@@ -227,6 +223,41 @@
                 </div>
             </div>
         </section>
+        <section class="map">
+            <footer class="footer">
+                <div class="container footer__container">
+                    <div class="footer__contacts">
+                        <p class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
+                        <a href="+78123771377" type="tel" class="footer__tel">+7 (812) 377-13-77</a>
+                    </div>
+                    <div class="footer__socials">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__soc-link">
+                                    <div class="footer__soc footer__soc-vk"></div>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__soc-link">
+                                    <div class="footer__soc footer__soc-fb"></div>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__soc-link">
+                                    <div class="footer__soc footer__soc-inst"></div>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__soc-link">
+                                    <div class="footer__soc footer__soc-tw"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
     </div>
     <div class="side-nav">
         <ul class="side-nav__list">

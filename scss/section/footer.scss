@@ -1,0 +1,61 @@
+.footer {
+  background: url("../img/back/footer.png");
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.footer__contacts {
+  text-align: left;
+  margin-right: auto;
+}
+
+.footer__address {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+
+.footer__tel {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: $red;
+}
+
+.footer__socials {
+  text-align: right;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__item {
+  margin-right: 20px;
+}
+
+.footer__soc {
+  width: 20px;
+  height: 20px;
+
+  &-vk {
+    background: url("../img/socials/vk.png") center center no-repeat;
+  }
+
+  &-fb {
+    background: url("../img/socials/fb.png") center center no-repeat;
+  }
+
+  &-inst {
+    background: url("../img/socials/inst.png") center center no-repeat;
+  }
+
+  &-tw {
+    background: url("../img/socials/tw.png") center center no-repeat;
+  }
+}
