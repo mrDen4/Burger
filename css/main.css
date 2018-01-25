@@ -85,6 +85,7 @@ ul {
 
 .container {
   width: 940px;
+  height: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +143,19 @@ ul {
   font-size: 72px;
   text-transform: uppercase;
   font-weight: 400; }
+
+.btn {
+  font-family: 'Ubuntu-Medium', Arial, serif;
+  width: 100px;
+  height: 38px;
+  background: #e45028;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: #e45028;
+  border-radius: 5px; }
+  .btn:hover {
+    cursor: pointer; }
 
 .side-nav__list {
   display: -webkit-box;
@@ -221,18 +235,7 @@ ul {
   font-weight: 500; }
 
 .header__btn {
-  font-family: 'Ubuntu-Medium', Arial, serif;
-  margin-left: 15px;
-  width: 100px;
-  height: 38px;
-  background: #e45028;
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-  border: #e45028;
-  border-radius: 5px; }
-  .header__btn:hover {
-    cursor: pointer; }
+  margin-left: 15px; }
 
 .header__logo {
   margin-right: auto; }
@@ -517,6 +520,76 @@ ul {
     color: white; }
   .staff__ava:hover .staff__ava-more {
     opacity: 1; }
+
+.delivery {
+  background: url("../img/back/delivery.png");
+  background-size: cover; }
+
+.delivery__tittle {
+  margin-bottom: 44px; }
+
+.delivery__form-elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.delivery__form-content {
+  width: 50%;
+  margin-right: 20px; }
+  .delivery__form-content:last-child {
+    margin-right: 0; }
+
+.delivery__form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.delivery__form-block {
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 20px; }
+  .delivery__form-block:last-child {
+    margin-right: 0; }
+
+.delivery__form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px; }
+  .delivery__form-check:last-child {
+    margin-right: 0; }
+
+.delivery__form-block-tittle {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: white; }
+
+.delivery__form-input {
+  margin-top: 7px;
+  margin-bottom: 20px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px 20px; }
+
+.delivery__form-radio {
+  margin-right: 10px;
+  margin-bottom: 25px; }
+
+.delivery__form-input--comment {
+  padding: 5px 5px;
+  min-width: 450px;
+  min-height: 115px; }
+
+.delivery__btn-clear {
+  background: none;
+  font-family: 'Ubuntu-Light', Arial, serif;
+  text-transform: none;
+  font-size: 14px; }
 
 .map {
   background: url("../img/map.png");

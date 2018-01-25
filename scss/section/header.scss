@@ -36,20 +36,7 @@
 }
 
 .header__btn {
-  font-family: 'Ubuntu-Medium', Arial, serif;
   margin-left: 15px;
-  width: 100px;
-  height: 38px;
-  background: $bg-btn;
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-  border: $bg-btn;
-  border-radius: 5px;
-
-    &:hover {
-      cursor: pointer;
-    }
 }
 
 .header__logo {
