@@ -1,41 +1,52 @@
 .team {
-  background: url("../img/back/team.png");
+  background: url("../img/back/team.png") center center no-repeat;
   background-size: cover;
   position: relative;
 }
 
 .team__description {
-  position: absolute;
-  top: 0px;
-  right: 0;
+  height: 100vh;
   width: 50vw;
+  background-color: $black;
+  opacity: .9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include tablets() {
+    width: 100vw;
+  }
 }
 
 .team__tittle {
-  margin-top: 113px;
-  margin-bottom: 45px;
+  margin-top: rem(113px);
+  margin-bottom: rem(45px);
 }
 
 .team__item {
-  margin-bottom: 35px;
+  margin-bottom: rem(35px);
   font-family: 'gagalin', Arial, serif;
   color: white;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
 }
 
 .team__more-ava {
-  width: 100px;
-  height: 100px;
+  width: rem(100px);
+  height: rem(100px);
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 10px;
+  margin-right: rem(10px);
 }
 
 .team__link-more {
   font-family: 'Ubuntu-Light', Arial, serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: white;
   display: flex;
   justify-content: center;
@@ -45,7 +56,7 @@
 }
 
 .team__link-content {
-  max-width: 210px;
+  max-width: rem(210px);
 }
 
 .team__more-tittle {

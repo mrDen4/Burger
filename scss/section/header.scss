@@ -6,6 +6,10 @@
 .header__list {
   display: flex;
   list-style: none;
+
+  @include tablets() {
+    display: none;
+  }
 }
 
 .header__item {

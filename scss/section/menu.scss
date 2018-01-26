@@ -6,8 +6,8 @@
 
 .menu__tittle {
   color: white;
-  margin-top: 111px;
-  margin-left: 95px;
+  margin-top: rem(111px);
+  margin-left: rem(95px);
 }
 
 .menu__accordion {
@@ -25,10 +25,15 @@
 }
 
 .menu__link-for {
-  width: 80px;
+  width: rem(80px);
   height: 100vh;
   writing-mode: vertical-rl;
-  background-size: cover;
+  font-family: 'gagalin', Arial, serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: rem(40px);
+  color: white;
+  margin: 0;
 
   &-meat {
     background: url("../img/back/for-meat-man.png");
@@ -46,23 +51,14 @@
   }
 }
 
-.menu__subtittle {
-  font-family: 'gagalin', Arial, serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 40px;
-  color: white;
-  margin: 0;
-}
-
 .menu__more {
   background-color: $black;
   opacity: .9;
-  width: 540px;
+  width: rem(540px);
 
   &-meat {
-    //width: 0;
-    //overflow: hidden;
+    width: 0;
+    overflow: hidden;
   }
 
   &-veg {
@@ -78,9 +74,9 @@
 
 .menu__more-text {
   font-family: 'Ubuntu-Light', Arial, serif;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
   color: white;
-  margin: 60px auto;
-  max-width: 470px;
+  margin: rem(60px) auto;
+  max-width: rem(470px);
 }

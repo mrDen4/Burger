@@ -6,7 +6,7 @@
 
 .staff__ava {
   width: 25%;
-  min-height: 325px;
+  height: 50%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,10 +14,16 @@
   align-items: center;
   filter: grayscale(1);
   background-size: cover;
+  background-position: center center;
+
+  @include tablets() {
+    width: 50%;
+    height: 25%;
+  }
 
   &-more {
-    max-width: 222px;
-    max-height: 325px;
+    max-width: rem(222px);
+    max-height: rem(325px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,25 +32,25 @@
 
   &-tittle {
     font-family: 'gagalin', Arial, serif;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
     color: white;
   }
 
   &-text {
     font-family: 'Ubuntu-Light', Arial, serif;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     color: white;
-    line-height: 24px;
+    line-height: rem(24px);
   }
 
   &-btn {
-    width: 110px;
-    height: 35px;
+    width: rem(110px);
+    height: rem(35px);
     background: #2f3234;
     border: #2f3234;
-    border-radius: 5px;
+    border-radius: rem(5px);
     color: white;
   }
 

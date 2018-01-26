@@ -15,7 +15,8 @@
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -31,6 +32,10 @@
 
 .natural__container {
   flex-direction: row;
+
+  @include tablets() {
+    flex-direction: column;
+  }
 }
 
 .menu__container {
@@ -43,8 +48,6 @@
 }
 
 .team__container {
-  background-color: $black;
-  opacity: .9;
   width: 50vw;
   height: 100vh;
   justify-content: normal;
@@ -53,7 +56,7 @@
 .title {
   font-family: 'gagalin', Arial, serif;
   color: #f9b43b;
-  font-size: 72px;
+  font-size: rem(72px);
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -64,7 +67,7 @@
   height: 38px;
   background: $bg-btn;
   color: #fff;
-  font-size: 13px;
+  font-size: rem(13px);
   text-transform: uppercase;
   border: $bg-btn;
   border-radius: 5px;

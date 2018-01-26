@@ -4,18 +4,28 @@
 }
 
 .delivery__tittle {
-  margin-bottom: 44px;
+  margin-bottom: rem(44px);
 }
 
 .delivery__form-elem {
   display: flex;
+
+  @include tablets() {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .delivery__form-content {
   width: 50%;
-  margin-right: 20px;
+  margin-right: rem(20px);
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include  tablets() {
     margin-right: 0;
   }
 }
@@ -27,7 +37,7 @@
 .delivery__form-block {
   display: block;
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
 
   &:last-child {
     margin-right: 0;
@@ -36,7 +46,7 @@
 
 .delivery__form-check {
   display: flex;
-  margin-right: 20px;
+  margin-right: rem(20px);
 
   &:last-child {
     margin-right: 0;
@@ -45,35 +55,35 @@
 
 .delivery__form-block-tittle {
   font-family: 'Ubuntu-Light', Arial, serif;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
   color: white;
 }
 
 .delivery__form-input {
-  margin-top: 7px;
-  margin-bottom: 20px;
-  height: 35px;
+  margin-top: rem(7px);
+  margin-bottom: rem(20px);
+  height: rem(35px);
   border: none;
-  border-radius: 5px;
+  border-radius: rem(5px);
   width: 100%;
-  padding: 12px 20px;
+  padding: rem(12px) rem(20px);
 }
 
 .delivery__form-radio {
-  margin-right: 10px;
-  margin-bottom: 25px;
+  margin-right: rem(10px);
+  margin-bottom: rem(25px);
 }
 
 .delivery__form-input--comment {
-  padding: 5px 5px;
-  min-width: 450px;
-  min-height: 115px;
+  padding: rem(5px) rem(5px);
+  min-width: 100%;
+  min-height: rem(115px);
 }
 
 .delivery__btn-clear {
   background: none;
   font-family: 'Ubuntu-Light', Arial, serif;
   text-transform: none;
-  font-size: 14px;
+  font-size: rem(14px);
 }

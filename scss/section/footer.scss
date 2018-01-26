@@ -15,14 +15,14 @@
 
 .footer__address {
   font-family: 'Ubuntu-Light', Arial, serif;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
   color: white;
 }
 
 .footer__tel {
   font-family: 'Ubuntu-Light', Arial, serif;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 700;
   color: $red;
 }
@@ -36,12 +36,12 @@
 }
 
 .footer__item {
-  margin-right: 20px;
+  margin-right: rem(20px);
 }
 
 .footer__soc {
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
 
   &-vk {
     background: url("../img/socials/vk.png") center center no-repeat;
