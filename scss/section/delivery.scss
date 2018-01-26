@@ -5,6 +5,7 @@
 
 .delivery__tittle {
   margin-bottom: rem(44px);
+  text-align: center;
 }
 
 .delivery__form-elem {
@@ -27,11 +28,19 @@
 
   @include  tablets() {
     margin-right: 0;
+    width: 100%;
   }
 }
 
 .delivery__form-row {
   display: flex;
+}
+
+.delivery__form-row--center {
+  @include phones() {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .delivery__form-block {

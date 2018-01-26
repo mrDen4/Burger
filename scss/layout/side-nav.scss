@@ -1,3 +1,9 @@
+.side-nav {
+  @include tablets() {
+    display: none;
+  }
+}
+
 .side-nav__list {
   display: flex;
   flex-direction: column;

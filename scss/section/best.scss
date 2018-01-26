@@ -18,6 +18,10 @@
 .best__list {
   display: flex;
   list-style: none;
+
+  @include phones() {
+    flex-direction: column;
+  }
 }
 
 .best__item {
@@ -26,11 +30,17 @@
   align-items: center;
   text-align: center;
   max-width: rem(300px);
+
+  @include phones() {
+    flex-direction: row;
+    max-width: 100%;
+    text-align: left;
+  }
 }
 
 .best__item-img {
-  width: rem(100px);
-  height: rem(90px);
+  min-width: rem(100px);
+  min-height: rem(90px);
 
   &-meat {
     background: url("../img/decor/meat.png") center center no-repeat;
@@ -42,6 +52,12 @@
 
   &-natural {
     background: url("../img/decor/natural.png") center center no-repeat;
+  }
+}
+
+.best__item-content {
+  @include phones() {
+    margin-left: 28px;
   }
 }
 
