@@ -24,6 +24,13 @@
   display: flex;
 }
 
+.menu__item--active {
+  .menu__more {
+    width: rem(540px);
+    overflow: initial;
+  }
+}
+
 .menu__link-for {
   width: rem(80px);
   height: 100vh;
@@ -49,6 +56,11 @@
     background: url("../img/back/for-diet.png");
     background-size: cover;
   }
+}
+
+.menu__link-text {
+  padding: 20px;
+  transform: rotate(180deg);
 }
 
 .menu__more {

@@ -1,0 +1,9 @@
+{
+  "name": "gulp-project",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat-css": "^3.0.0"
+  }
+}

@@ -41,11 +41,16 @@
                         <li class="header__item">
                             <a href="#" class="header__item-link">Контакты</a>
                         </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-link">
+                                <div class="header__item-link-btn">Заказать</div>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-                <button class="btn header__btn">
-                    Заказать
-                </button>
+                <!--<button class="btn header__btn">-->
+                    <!--Заказать-->
+                <!--</button>-->
             </div>
         </header>
         <section class="section natural">
@@ -97,7 +102,17 @@
                     <div class="team__accordion">
                         <ul class="team__lis">
                             <li class="team__item">
-                                Дэниэл Редклиф
+                                <button class="team__item-btn">Дэниэл Редклиф</button>
+                                <div class="team__link-more">
+                                    <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
+                                    <div class="team__link-content">
+                                        <h2 class="team__more-tittle">Оператор</h2>
+                                        <p class="team__more-text">С радостью поможет подобрать идеальный бургер и оформить заказ.  </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item team__item--active">
+                                <button class="team__item-btn">Ричард Джеймс</button>
                                 <div class="team__link-more">
                                     <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
                                     <div class="team__link-content">
@@ -107,7 +122,7 @@
                                 </div>
                             </li>
                             <li class="team__item">
-                                Ричард Джеймс
+                                <button class="team__item-btn">Джейк Финн</button>
                                 <div class="team__link-more">
                                     <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
                                     <div class="team__link-content">
@@ -117,17 +132,7 @@
                                 </div>
                             </li>
                             <li class="team__item">
-                                Джейк Финн
-                                <div class="team__link-more">
-                                    <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
-                                    <div class="team__link-content">
-                                        <h2 class="team__more-tittle">Оператор</h2>
-                                        <p class="team__more-text">С радостью поможет подобрать идеальный бургер и оформить заказ.  </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="team__item">
-                                Николай Иванов
+                                <button class="team__item-btn">Николай Иванов</button>
                                 <div class="team__link-more">
                                     <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
                                     <div class="team__link-content">
@@ -146,9 +151,9 @@
                 <h1 class="title menu__tittle">Меню</h1>
                 <div class="menu__accordion">
                     <ul class="menu__list">
-                        <li class="menu__item">
+                        <li class="menu__item menu__item--active">
                             <div class="menu__link-for menu__link-for-meat">
-                                Для мясоедов
+                                <div class="menu__link-text">Для мясоедов</div>
                             </div>
                             <div class="menu__more menu__more-meat">
                                 <p class="menu__more-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eos esse quaerat quam sed voluptates. Aliquam eligendi excepturi, minima numquam obcaecati optio porro quos tempora? Beatae facere illum saepe tempore?</p>
@@ -156,7 +161,7 @@
                         </li>
                         <li class="menu__item">
                             <div class="menu__link-for menu__link-for-veg">
-                                Вегетарианское
+                                <div class="menu__link-text">Вегетарианское</div>
                             </div>
                             <div class="menu__more menu__more-veg">
                                 <p class="menu__more-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur consequuntur illo, illum impedit laborum natus, placeat praesentium provident quam quasi qui quis quo. At eum minima quisquam recusandae repellat.</p>
@@ -164,7 +169,7 @@
                         </li>
                         <li class="menu__item">
                             <div class="menu__link-for menu__link-for-diet">
-                                Диетическое
+                                <div class="menu__link-text">Диетическое</div>
                             </div>
                             <div class="menu__more menu__more-diet">
                                 <p class="menu__more-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid at beatae delectus doloribus earum eligendi esse fugiat harum ipsum itaque labore, provident qui quis saepe sapiente ut voluptatibus?</p>

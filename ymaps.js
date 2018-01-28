@@ -12,7 +12,7 @@ function init() {
 
     myPlacemark = new ymaps.Placemark([55.996185, 37.211611], {
         hintContent: 'Cafe friends',
-        balloonContent: 'Cafe friends'
+        balloonContent: 'ФРЭНДС'
     });
 
     myMap.geoObjects.add(myPlacemark);

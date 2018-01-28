@@ -244,20 +244,28 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style: none; }
   @media screen and (max-width: 768px) {
     .header__list {
       display: none; } }
 
 .header__item {
-  margin-left: 30px; }
+  margin-left: 30px;
+  position: relative; }
   .header__item:before {
     color: white;
     content: '•';
-    padding-right: 10px; }
+    top: 1px;
+    left: -15px;
+    position: absolute; }
   .header__item:hover {
     text-decoration: underline; }
   .header__item:first-child:before {
+    display: none; }
+  .header__item:last-child:before {
     display: none; }
 
 .header__item-link {
@@ -267,6 +275,16 @@ ul {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500; }
+  .header__item-link-btn {
+    display: inline-block;
+    padding: 13px 15px;
+    font-family: 'Ubuntu-Medium', Arial, serif;
+    background: #e45028;
+    color: #fff;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    border: #e45028;
+    border-radius: 5px; }
 
 .header__btn {
   margin-left: 15px; }
@@ -430,16 +448,28 @@ ul {
   margin-top: 7.0625rem;
   margin-bottom: 2.8125rem; }
 
-.team__item {
+.team__item-btn {
+  background: none;
+  border: none;
   margin-bottom: 2.1875rem;
   font-family: 'gagalin', Arial, serif;
   color: white;
   font-size: 0.875rem;
-  font-weight: 400; }
+  font-weight: 400;
+  position: relative; }
+  .team__item-btn:before {
+    left: -20px;
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 9px solid transparent;
+    border-bottom-color: #f9b43b;
+    border-top-width: 0px; }
 
 .team__more-ava {
-  width: 6.25rem;
-  height: 6.25rem;
+  max-width: 6.25rem;
+  max-height: 6.25rem;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 0.625rem; }
@@ -458,8 +488,18 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 40px;
   height: 0;
   overflow: hidden; }
+
+.team__item--active .team__item-btn:before {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.team__item--active .team__link-more {
+  height: 95px;
+  overflow: initial; }
 
 .team__link-content {
   max-width: 13.125rem; }
@@ -493,6 +533,10 @@ ul {
   display: -ms-flexbox;
   display: flex; }
 
+.menu__item--active .menu__more {
+  width: 33.75rem;
+  overflow: initial; }
+
 .menu__link-for {
   width: 5rem;
   height: 100vh;
@@ -514,6 +558,12 @@ ul {
   .menu__link-for-diet {
     background: url("../img/back/for-diet.png");
     background-size: cover; }
+
+.menu__link-text {
+  padding: 20px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .menu__more {
   background-color: #2f3234;
@@ -538,7 +588,7 @@ ul {
   max-width: 29.375rem; }
 
 .staff {
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

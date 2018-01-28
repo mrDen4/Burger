@@ -5,6 +5,7 @@
 
 .header__list {
   display: flex;
+  align-items: center;
   list-style: none;
 
   @include tablets() {
@@ -14,11 +15,14 @@
 
 .header__item {
   margin-left: 30px;
+  position: relative;
 
   &:before {
     color: white;
     content: '•';
-    padding-right: 10px;
+    top: 1px;
+    left: -15px;
+    position: absolute;
   }
 
   &:hover {
@@ -26,6 +30,10 @@
   }
 
   &:first-child:before {
+    display: none;
+  }
+
+  &:last-child:before {
     display: none;
   }
 }
@@ -37,6 +45,18 @@
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
+
+  &-btn {
+    display: inline-block;
+    padding: 13px 15px;
+    font-family: 'Ubuntu-Medium', Arial, serif;
+    background: $bg-btn;
+    color: #fff;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    border: $bg-btn;
+    border-radius: 5px;
+  }
 }
 
 .header__btn {
