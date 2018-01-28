@@ -11,11 +11,11 @@
 .natural__img {
   margin-top: 25px;
   width: 50%;
-  min-height: 425px;
+  height: rem(425px);
   background: url("../img/decor/main-burger.png") center center no-repeat;
 
   @include tablets() {
-    width: 100%;
+    min-width: 100%;
   }
 }
 

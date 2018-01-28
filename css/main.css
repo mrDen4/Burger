@@ -87,6 +87,7 @@ ul {
 .container {
   width: 95%;
   max-width: 940px;
+  min-height: 650px;
   height: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -104,6 +105,7 @@ ul {
   flex-direction: column; }
 
 .header__container {
+  min-height: 80px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -140,6 +142,7 @@ ul {
   margin: 0; }
 
 .footer__container {
+  min-height: 60px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -289,11 +292,11 @@ ul {
 .natural__img {
   margin-top: 25px;
   width: 50%;
-  min-height: 425px;
+  height: 26.5625rem;
   background: url("../img/decor/main-burger.png") center center no-repeat; }
   @media screen and (max-width: 768px) {
     .natural__img {
-      width: 100%; } }
+      min-width: 100%; } }
 
 .natural__content {
   width: 50%; }
@@ -331,7 +334,6 @@ ul {
 .best__tittle {
   font-family: 'gagalin', Arial, serif;
   color: #2f3234;
-  font-size: 4.5rem;
   text-transform: uppercase;
   font-weight: 400;
   text-align: center; }
@@ -697,11 +699,14 @@ ul {
   font-size: 0.875rem; }
 
 .map {
-  background: url("../img/map.png");
   background-size: cover;
   position: relative;
   height: 100vh;
   width: 100vw; }
+
+.map__yandex {
+  width: 100%;
+  height: 100%; }
 
 .footer {
   background: url("../img/back/footer.png") center center no-repeat;
