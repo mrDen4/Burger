@@ -58,6 +58,12 @@
     .staff__ava-more {
       opacity: 1;
     }
+
+    @include phones() {
+      .staff__ava-text {
+        display: none;
+      }
+    }
   }
 }
 

@@ -29,6 +29,11 @@
   align-items: center;
   text-align: center;
   max-width: rem(300px);
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   @include phones() {
     flex-direction: row;

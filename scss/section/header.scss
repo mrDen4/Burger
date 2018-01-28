@@ -3,6 +3,17 @@
   position: absolute;
 }
 
+.header__menu {
+  width: 25px;
+  height: 25px;
+  background: url("../img/decor/menu.png") center center no-repeat;
+  display: none;
+
+  @include tablets() {
+    display: initial;
+  }
+}
+
 .header__list {
   display: flex;
   align-items: center;

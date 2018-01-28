@@ -139,6 +139,9 @@ ul {
   -webkit-box-align: normal;
   -ms-flex-align: normal;
   align-items: normal;
+  -webkit-box-pack: initial;
+  -ms-flex-pack: initial;
+  justify-content: initial;
   margin: 0; }
 
 .footer__container {
@@ -239,6 +242,15 @@ ul {
 .header {
   width: 100%;
   position: absolute; }
+
+.header__menu {
+  width: 25px;
+  height: 25px;
+  background: url("../img/decor/menu.png") center center no-repeat;
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .header__menu {
+      display: initial; } }
 
 .header__list {
   display: -webkit-box;
@@ -380,7 +392,10 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  max-width: 18.75rem; }
+  max-width: 18.75rem;
+  margin-right: 10px; }
+  .best__item:last-child {
+    margin-right: 0; }
   @media screen and (max-width: 480px) {
     .best__item {
       -webkit-box-orient: horizontal;
@@ -515,8 +530,7 @@ ul {
 
 .menu__tittle {
   color: white;
-  margin-top: 6.9375rem;
-  margin-left: 5.9375rem; }
+  margin-left: 5vw; }
 
 .menu__accordion {
   position: absolute;
@@ -534,11 +548,11 @@ ul {
   display: flex; }
 
 .menu__item--active .menu__more {
-  width: 33.75rem;
+  width: 40vw;
   overflow: initial; }
 
 .menu__link-for {
-  width: 5rem;
+  width: 7vw;
   height: 100vh;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
@@ -548,7 +562,16 @@ ul {
   font-weight: 400;
   font-size: 2.5rem;
   color: white;
-  margin: 0; }
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .menu__link-for-meat {
     background: url("../img/back/for-meat-man.png");
     background-size: cover; }
@@ -560,7 +583,7 @@ ul {
     background-size: cover; }
 
 .menu__link-text {
-  padding: 20px;
+  padding: 1.25rem;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
@@ -651,6 +674,9 @@ ul {
     color: white; }
   .staff__ava:hover .staff__ava-more {
     opacity: 1; }
+  @media screen and (max-width: 480px) {
+    .staff__ava:hover .staff__ava-text {
+      display: none; } }
 
 .delivery {
   background: url("../img/back/delivery.png");
