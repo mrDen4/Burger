@@ -488,8 +488,8 @@ ul {
     border-top-width: 0px; }
 
 .team__more-ava {
-  max-width: 6.25rem;
-  max-height: 6.25rem;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 0.625rem; }
@@ -742,6 +742,7 @@ ul {
     margin-right: 0; }
 
 .delivery__form-check {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -764,11 +765,12 @@ ul {
   width: 100%;
   padding: 0.75rem 1.25rem; }
 
-.delivery__form-radio {
+.delivery__form-radio-money, .delivery__form-radio-card, .delivery__form-radio {
   margin-right: 0.625rem;
   margin-bottom: 1.5625rem; }
 
-.delivery__form-input--comment {
+.delivery__form-comment {
+  border-radius: 5px;
   padding: 0.3125rem 0.3125rem;
   min-width: 100%;
   min-height: 7.1875rem; }

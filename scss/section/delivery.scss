@@ -54,6 +54,7 @@
 }
 
 .delivery__form-check {
+  position: relative;
   display: flex;
   margin-right: rem(20px);
 
@@ -79,12 +80,54 @@
   padding: rem(12px) rem(20px);
 }
 
-.delivery__form-radio {
+.delivery__form-radio-money {
   margin-right: rem(10px);
   margin-bottom: rem(25px);
 }
 
-.delivery__form-input--comment {
+.delivery__form-radio-card {
+  @extend .delivery__form-radio-money;
+}
+
+.delivery__form-radio {
+  @extend .delivery__form-radio-money;
+}
+
+//.delivery__check-money {
+//  width: 17px;
+//  height: 17px;
+//  background: white;
+//  position: absolute;
+//  border: none;
+//  border-radius: 50%;
+//  top: 1px;
+//  left: -1px;
+//}
+//
+//.delivery__point-money {
+//  width: 7px;
+//  height: 7px;
+//  background: #e35028;
+//  position: absolute;
+//  border-radius: 50%;
+//  top: 6px;
+//  left: 4px;
+//  display: none;
+//}
+//
+//.delivery__form-radio-money:checked {
+//
+//  .delivery__check-money {
+//    background: green;
+//  }
+//
+//  .delivery__point-money {
+//    display: initial;
+//  }
+//}
+
+.delivery__form-comment {
+  border-radius: 5px;
   padding: rem(5px) rem(5px);
   min-width: 100%;
   min-height: rem(115px);

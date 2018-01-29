@@ -291,22 +291,26 @@
                             <div class="delivery__form-row">
                                 <label class="delivery__form-block">
                                     <div class="delivery__form-block-tittle">Комментарий</div>
-                                    <input type="text" class="delivery__form-input delivery__form-input--comment">
+                                    <textarea name="comment" id="" cols="50" rows="10" class="delivery__form-comment"></textarea>
                                 </label>
                             </div>
                             <div class="delivery__form-row delivery__form-row--center">
                                 <label class="delivery__form-check">
-                                    <input type="radio" class="delivery__form-radio">
+                                    <input name="ask" type="radio" class="delivery__form-radio-money" value="money">
                                     <div class="delivery__form-block-tittle">Потребуется сдача</div>
+                                    <span class="delivery__check-money"></span>
+                                    <span class="delivery__point-money"></span>
                                 </label>
                                 <label class="delivery__form-check">
-                                    <input type="radio" class="delivery__form-radio">
+                                    <input name="ask" type="radio" class="delivery__form-radio-card" value="card">
                                     <div class="delivery__form-block-tittle">Оплата по карте</div>
+                                    <span class="delivery__check-card"></span>
+                                    <span class="delivery__point-card"></span>
                                 </label>
                             </div>
                             <div class="delivery__form-row delivery__form-row--center">
                                 <label class="delivery__form-check">
-                                    <input type="radio" class="delivery__form-radio">
+                                    <input type="checkbox" class="delivery__form-radio">
                                     <div class="delivery__form-block-tittle">Не перезванивать</div>
                                 </label>
                             </div>
