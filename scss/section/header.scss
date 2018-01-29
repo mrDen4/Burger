@@ -70,6 +70,23 @@
   }
 }
 
+.header__add {
+  display: none;
+  margin-right: 50px;
+
+  .header__add-link {
+    @extend .header__item-link;
+
+    .header__add-btn {
+      @extend .header__item-link-btn;
+    }
+  }
+
+  @include tablets() {
+    display: initial;
+  }
+}
+
 .header__btn {
   margin-left: 15px;
 }
