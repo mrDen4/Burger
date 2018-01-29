@@ -43,20 +43,8 @@
 }
 
 .best__item-img {
-  min-width: rem(100px);
-  min-height: rem(90px);
-
-  &-meat {
-    background: url("../img/decor/meat.png") center center no-repeat;
-  }
-
-  &-hand {
-    background: url("../img/decor/hand.png") center center no-repeat;
-  }
-
-  &-natural {
-    background: url("../img/decor/natural.png") center center no-repeat;
-  }
+  max-width: rem(100px);
+  max-height: rem(90px);
 }
 
 .best__item-content {

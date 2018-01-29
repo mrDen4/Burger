@@ -32,7 +32,14 @@
   font-size: rem(14px);
   font-weight: 700;
   color: $red;
+
+  &-img {
+    width: 12px;
+    height: 11px;
+    fill: #E45028;
+  }
 }
+
 
 .footer__socials {
   text-align: right;
@@ -46,23 +53,12 @@
   margin-right: rem(20px);
 }
 
-.footer__soc {
-  width: rem(20px);
-  height: rem(20px);
+.footer__soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: #595959;
 
-  &-vk {
-    background: url("../img/socials/vk.png") center center no-repeat;
-  }
-
-  &-fb {
-    background: url("../img/socials/fb.png") center center no-repeat;
-  }
-
-  &-inst {
-    background: url("../img/socials/inst.png") center center no-repeat;
-  }
-
-  &-tw {
-    background: url("../img/socials/tw.png") center center no-repeat;
+  &:hover{
+    fill: #FFFF;
   }
 }
