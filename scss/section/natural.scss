@@ -12,7 +12,7 @@
   height: rem(425px);
   background: url("../img/decor/main-burger.png") center center no-repeat;
 
-  @include tablets() {
+  @include laptop() {
     min-width: 100%;
   }
 }
@@ -20,7 +20,7 @@
 .natural__content {
   width: 50%;
 
-  @include tablets() {
+  @include laptop() {
     width: 100%;
     text-align: center;
   }
@@ -30,7 +30,7 @@
   margin-bottom: 40px;
   margin-top: 175px;
 
-  @include tablets() {
+  @include laptop() {
     margin-bottom: 0;
     margin-top: 0;
   }
