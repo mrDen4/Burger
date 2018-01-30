@@ -10,8 +10,8 @@
 }
 
 .section {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .container {
@@ -24,6 +24,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 70px;
+
+  @include tablets() {
+    padding: 0 50px;
+  }
+
+  @include phones() {
+    padding: 0 20px;
+  }
 }
 
 .header__container {
@@ -51,6 +60,10 @@
   align-items: normal;
   justify-content: initial;
   margin: 0;
+}
+
+.delivery__container {
+  align-items: initial;
 }
 
 .footer__container {
