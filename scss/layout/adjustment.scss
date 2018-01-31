@@ -90,7 +90,7 @@
   text-transform: uppercase;
   font-weight: 400;
 
-  @include phones() {
+  @include tablets() {
     font-size: rem(50px);
   }
 }

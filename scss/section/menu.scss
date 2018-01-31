@@ -21,6 +21,7 @@
 
 .menu__item {
   display: flex;
+
 }
 
 .menu__item--active {
@@ -31,7 +32,7 @@
 }
 
 .menu__link-for {
-  width: 7vw;
+  max-width: 4vw;
   height: 100vh;
   writing-mode: vertical-rl;
   font-family: 'gagalin', Arial, serif;
@@ -43,6 +44,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include tablets() {
+    min-width: 7vw;
+  }
 
   &-meat {
     background: url("../img/back/for-meat-man.png");

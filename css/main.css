@@ -184,7 +184,7 @@ ul {
   font-size: 4.5rem;
   text-transform: uppercase;
   font-weight: 400; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 800px) {
     .title {
       font-size: 3.125rem; } }
 
@@ -568,7 +568,7 @@ ul {
   overflow: initial; }
 
 .menu__link-for {
-  width: 7vw;
+  max-width: 4vw;
   height: 100vh;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
@@ -588,6 +588,9 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media screen and (max-width: 800px) {
+    .menu__link-for {
+      min-width: 7vw; } }
   .menu__link-for-meat {
     background: url("../img/back/for-meat-man.png");
     background-size: cover; }
