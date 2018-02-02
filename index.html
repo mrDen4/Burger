@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
-    <script src="ymaps.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-    <script src="vue.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -154,11 +151,11 @@
             <div class="container team__container">
                 <div class="team__description">
                     <h1 class="title team__tittle">Команда</h1>
-                    <div class="team__accordion" id="team">
+                    <div class="team__accordion">
                         <ul class="team__lis">
                             <li class="team__item">
-                                <button class="team__item-btn" @click= "show = !show">Дэниэл Редклиф</button>
-                                <div class="team__link-more" v-show="show">
+                                <button class="team__item-btn">Дэниэл Редклиф</button>
+                                <div class="team__link-more">
                                     <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
                                     <div class="team__link-content">
                                         <h2 class="team__more-tittle">Оператор</h2>
@@ -446,5 +443,6 @@
             </li>
         </ul>
     </div>
+    <script src="ymaps.js" type="text/javascript"></script>
 </body>
 </html>
