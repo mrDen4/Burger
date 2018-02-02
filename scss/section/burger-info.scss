@@ -1,0 +1,146 @@
+.burger-info {
+    background: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-info__btn-left {
+    position: absolute;
+    left: 5%;
+    fill: white;
+    transform: rotate(90deg);
+
+    .btn-left__svg {
+    width: 30px;
+    height: 17px;
+    }
+}
+
+
+
+.burger-info__btn-right {
+    position: absolute;
+    right: 5%;
+    fill: white;
+    width: 30px;
+    height: 17px;
+    transform: rotate(-90deg);
+
+    .btn-right__svg {
+        width: 30px;
+        height: 17px;
+}
+}
+
+
+
+.burger-info__slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 475px;
+}
+
+.slide__decor {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide__decor-composition {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    background: #ee832d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: uppercase;
+}
+
+.composition__svg {
+    width: 45px;
+    height: 45px;
+}
+
+.slide__decor-kkal {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    min-width: 70px;
+    min-height: 80px;
+    font-family: 'gagalin', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: rem(14px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: uppercase;
+    opacity: .5;
+}
+
+.kkal__count {
+    position: absolute;
+    font-size: rem(20px);
+}
+
+.kkal__svg {
+    width: 60px;
+    height: 60px;
+}
+
+.slide__decor-img {
+    background: url(../img/decor/dark-beef.png) center center no-repeat;
+    width: 450px;
+    height: 335px;
+}
+
+.slide__content {
+    width: 45%;
+}
+
+.slide__title {
+    color: white;
+}
+
+.slide__text {
+    color: white;
+    font-family: 'Ubuntu-Light', Arial, serif;
+    font-weight: 300;
+    font-size: rem(14px);
+}
+
+.slide__price {
+    font-family: 'gagalin', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    color: $red;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.slide__price-val {
+    font-size: 30px;
+    text-decoration: uppercase;
+    margin-left: -15px;
+}
+
+.slide__link {
+    @extend .header__item-link;
+    
+    .slide__btn {
+        @extend .header__item-link-btn;
+    }
+}
+

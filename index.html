@@ -9,6 +9,8 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
     <script src="ymaps.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="vue.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -104,15 +106,59 @@
                 </ul>
             </div>
         </section>
+        <section class="section burger-info">
+            <div class="container burger-info__container">
+                <div class="burger-info__btn-left">
+                        <svg class="btn-left__svg">
+                                <use xlink:href="img/svg/sprite/content.svg#scroll"></use>
+                        </svg>
+                </div>
+                <div class="burger-info__slide">
+                    <div class="slide__decor">
+                        <div class="slide__decor-img"></div>
+                        <div class="slide__decor-composition">
+                            <!-- тут должна быть свг картинка -->
+                            <svg class="composition__svg">
+                                    <use xlink:href="img/svg/sprite/content.svg#burger"></use>
+                            </svg>
+                            состав
+                        </div>
+                        <div class="slide__decor-kkal">
+                            <!-- тут должна быть свг картинка -->
+                            <svg class="kkal__svg">
+                                    <use xlink:href="img/svg/sprite/content.svg#kkal"></use>
+                            </svg>
+                        <div class="kkal__count"> 1200 </div> 
+                        ккал
+                        </div>
+                    </div>
+                    <div class="slide__content">
+                        <div class="title slide__title">Dark beef burger</div>
+                        <p class="slide__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                        <div class="slide__price">500 
+                            <span class="slide__price-val">рублей</span>
+                        </div>
+                        <a href="#" class="slide__link">
+                            <div class="slide__btn">Заказать</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="burger-info__btn-right">
+                        <svg class="btn-right__svg">
+                                <use xlink:href="img/svg/sprite/content.svg#scroll"></use>
+                        </svg>
+                </div>
+            </div> 
+        </section>
         <section class="section team">
             <div class="container team__container">
                 <div class="team__description">
                     <h1 class="title team__tittle">Команда</h1>
-                    <div class="team__accordion">
+                    <div class="team__accordion" id="team">
                         <ul class="team__lis">
                             <li class="team__item">
-                                <button class="team__item-btn">Дэниэл Редклиф</button>
-                                <div class="team__link-more">
+                                <button class="team__item-btn" @click= "show = !show">Дэниэл Редклиф</button>
+                                <div class="team__link-more" v-show="show">
                                     <img src="img/ava/team-ava.png" alt="Оператор" class="team__more-ava">
                                     <div class="team__link-content">
                                         <h2 class="team__more-tittle">Оператор</h2>

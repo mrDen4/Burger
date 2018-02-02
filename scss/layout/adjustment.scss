@@ -58,6 +58,11 @@
   }
 }
 
+.burger-info__container {
+  flex-direction: row;
+  padding: 0 20px;
+}
+
 .menu__container {
   align-items: normal;
   justify-content: initial;
