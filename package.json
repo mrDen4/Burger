@@ -1,9 +1,28 @@
 {
-  "name": "gulp-project",
-  "version": "0.1.0",
-  "dependencies": {},
-  "devDependencies": {
+  "name": "Burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ymaps.js",
+  "dependencies": {
     "gulp": "^4.0.0",
-    "gulp-concat-css": "^3.0.0"
-  }
+    "gulp-concat-css": "^3.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrDen4/burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrDen4/burger/issues"
+  },
+  "homepage": "https://github.com/mrDen4/burger#readme"
 }
