@@ -324,10 +324,12 @@ ul {
   height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  display: none; }
 
 .natural__menu--active {
-  opacity: .8; }
+  opacity: .8;
+  display: initial; }
 
 .menu__exit {
   background: url("../img/decor/exit.png") center center no-repeat;
