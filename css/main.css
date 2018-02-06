@@ -215,10 +215,13 @@ ul {
   height: 25px;
   background: url("../img/decor/menu.png") center center no-repeat;
   cursor: pointer;
-  display: none; }
+  display: none;
+  border: none; }
   @media screen and (max-width: 800px) {
     .header__menu {
       display: initial; } }
+  .header__menu--active {
+    display: none; }
 
 .header__list {
   display: flex;
@@ -336,9 +339,10 @@ ul {
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 10px;
-  top: 10px;
-  cursor: pointer; }
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  border: none; }
 
 .menu__list {
   display: flex;

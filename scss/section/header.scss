@@ -9,9 +9,14 @@
   background: url("../img/decor/menu.png") center center no-repeat;
   cursor: pointer;
   display: none;
+  border: none;
 
   @include tablets() {
     display: initial;
+  }
+
+  &--active {
+    display: none; 
   }
 }
 
