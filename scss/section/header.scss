@@ -13,10 +13,13 @@
 
   @include tablets() {
     display: initial;
+    z-index: 10;
   }
 
   &--active {
-    display: none; 
+    background: url('../img/decor/exit.png') center center no-repeat;
+    width: 20px;
+    height: 20px;
   }
 }
 

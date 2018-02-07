@@ -219,9 +219,12 @@ ul {
   border: none; }
   @media screen and (max-width: 800px) {
     .header__menu {
-      display: initial; } }
+      display: initial;
+      z-index: 10; } }
   .header__menu--active {
-    display: none; }
+    background: url("../img/decor/exit.png") center center no-repeat;
+    width: 20px;
+    height: 20px; }
 
 .header__list {
   display: flex;
@@ -333,16 +336,6 @@ ul {
 .natural__menu--active {
   opacity: .8;
   display: initial; }
-
-.menu__exit {
-  background: url("../img/decor/exit.png") center center no-repeat;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  cursor: pointer;
-  border: none; }
 
 .menu__list {
   display: flex;
