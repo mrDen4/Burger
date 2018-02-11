@@ -43,7 +43,7 @@
     width: 100%;
     min-height: 475px;
 
-    @include tablets() {
+    @include laptop() {
         flex-direction: column;
     }
 }
@@ -55,7 +55,7 @@
     align-items: center;
     justify-content: center;
 
-    @include tablets() {
+    @include laptop() {
         width: 100%;
         height: 50%;
     }
@@ -76,7 +76,7 @@
     justify-content: center;
     text-decoration: uppercase;
 
-    @include tablets() {
+    @include laptop() {
         left: 10%;
     }
 }
@@ -103,7 +103,7 @@
     text-decoration: uppercase;
     opacity: .5;
 
-    @include tablets() {
+    @include laptop() {
         left: 70%;
         bottom: 100%;
         top: 0px;
@@ -130,7 +130,7 @@
 .slide__content {
     width: 45%;
 
-    @include tablets() {
+    @include laptop() {
         width: 80%;
         text-align: center;
         height: 50%;

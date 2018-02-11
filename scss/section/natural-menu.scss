@@ -1,4 +1,4 @@
-.natural__menu {
+.natural__burger-menu {
     position: absolute;
     background: black;
     opacity: 0;
@@ -9,24 +9,24 @@
     display: none;
 } 
 
-.natural__menu--active {
+.natural__burger-menu--active {
     opacity: .8;
     display: initial;
 }
 
-.menu__list {
+.burger-menu__list {
     display: flex;
     flex-direction: column;
     // align-items: center;
     justify-content: center;
 }
 
-.menu__item{
+.burger-menu__item{
 margin-bottom: 50px;
 position: relative;
 }
 
-.menu__link {
+.burger-menu__link {
     font-family: 'Ubuntu-Regular', Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 400;
