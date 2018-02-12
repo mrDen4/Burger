@@ -463,6 +463,7 @@ ul {
   justify-content: center; }
 
 .burger-info__btn-left {
+  cursor: pointer;
   z-index: 10;
   background: none;
   border: none;
@@ -477,6 +478,7 @@ ul {
     height: 17px; }
 
 .burger-info__btn-right {
+  cursor: pointer;
   z-index: 10;
   background: none;
   border: none;
@@ -528,6 +530,7 @@ ul {
       height: 50%; } }
 
 .slide__decor-composition {
+  cursor: pointer;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -560,6 +563,7 @@ ul {
   height: 45px; }
 
 .slide__decor-kkal {
+  cursor: pointer;
   position: absolute;
   bottom: 0px;
   left: 0px;
