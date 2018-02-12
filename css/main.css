@@ -246,6 +246,10 @@ ul {
   width: 16px;
   height: 16px; }
 
+@media screen and (max-width: 480px) {
+  .bot-scroll {
+    display: none; } }
+
 .bot-scroll__link-next {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,6 +392,9 @@ ul {
   font-size: 4.0625rem;
   font-weight: 500;
   margin: 0; }
+  @media screen and (max-width: 480px) {
+    .natural__text {
+      font-size: 3.125rem; } }
 
 .natural__burger-menu {
   position: absolute;

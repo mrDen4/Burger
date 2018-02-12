@@ -1,3 +1,9 @@
+.bot-scroll {
+  @include phones () {
+    display: none;
+  }
+}
+
 .bot-scroll__link-next {
   display: flex;
   justify-content: center;
