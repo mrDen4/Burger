@@ -36,6 +36,7 @@
   font-size: rem(14px);
   font-weight: 400;
   position: relative;
+  cursor: pointer;
 
   &:before {
     left: -20px;
@@ -70,14 +71,23 @@
   overflow: hidden;
 }
 
-.team__item--active {
+// .team__item--active {
+//   .team__item-btn:before {
+//     transform: rotate(180deg);
+//   }
+
+//   .team__link-more {
+//     height: 95px;
+//     overflow: initial;
+//   }
+// }
+
+.team__link-more--active {
+  height: 95px;
+  overflow: initial;
+
   .team__item-btn:before {
     transform: rotate(180deg);
-  }
-
-  .team__link-more {
-    height: 95px;
-    overflow: initial;
   }
 }
 

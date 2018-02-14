@@ -23,13 +23,6 @@
 
 }
 
-.menu__item--active {
-  .menu__more {
-    width: 40vw;
-    overflow: initial;
-  }
-}
-
 .menu__link-for {
   max-width: 4vw;
   height: 100vh;
@@ -43,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   @include tablets() {
     min-width: 7vw;
@@ -72,22 +66,24 @@
 .menu__more {
   background-color: $black;
   opacity: .9;
-  width: rem(540px);
+  width: rem(540px); 
+  width: 0;
+  overflow: hidden;
 
-  &-meat {
-    width: 0;
-    overflow: hidden;
-  }
+  // &-meat {
+  //   width: 0;
+  //   overflow: hidden;
+  // }
 
-  &-veg {
-    width: 0;
-    overflow: hidden;
-  }
+  // &-veg {
+  //   width: 0;
+  //   overflow: hidden;
+  // }
 
-  &-diet {
-    width: 0;
-    overflow: hidden;
-  }
+  // &-diet {
+  //   width: 0;
+  //   overflow: hidden;
+  // }
 }
 
 .menu__more-text {
@@ -97,4 +93,9 @@
   color: white;
   margin: rem(60px) auto;
   max-width: rem(470px);
+}
+
+.menu__more--active {
+  width: 40vw;
+  overflow: initial;
 }
