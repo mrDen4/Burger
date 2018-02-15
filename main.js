@@ -35,23 +35,19 @@ $(document).ready(() => {
 
     //Team Accordion
     $('.team__item-btn').on('click', e => {
-        var teamMore = $(e.currentTarget).next();
-        if ($(teamMore).hasClass('team__link-more--active')) {
-            $(teamMore).toggleClass('team__link-more--active');
-        }
-        else {           
-            $(teamMore).toggleClass('team__link-more--active');
-        }
+        var teamMore = $(e.currentTarget).next();           
+        $(teamMore).toggleClass('team__link-more--active');
     });
 
     //Menu Accordion
     $('.menu__link-for').on('click', e => {
-        var MenuAccordion = $(e.currentTarget).next();
-        if ($(MenuAccordion).hasClass('menu__more--active')) {
+        var MenuAccordion = $(e.currentTarget).next();        
             $(MenuAccordion).toggleClass('menu__more--active');
-        }
-        else {          
-            $(MenuAccordion).toggleClass('menu__more--active');
-        }
+    });
+
+    //Slider
+    $('.slider').bxSlider({
+        nextText : '',
+        prevText: ''
     });
 });
