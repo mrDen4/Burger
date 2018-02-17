@@ -190,6 +190,10 @@
     border: none;
     box-shadow: none;
     margin-bottom: 0;
+
+    @include laptop() {
+        margin-top: 300px;;
+    }
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -201,19 +205,21 @@
 }
 
 .bx-prev {
-    background: url('../img/decor/left-btn.png') center center no-repeat !important;
+    background: url('../img/decor/arrow-scroll.png') center center no-repeat !important;
+    transform: rotate(90deg)
 }
 
 .bx-next {
-    background: url('../img/decor/right-btn.png') center center no-repeat !important;
+    background: url('../img/decor/arrow-scroll.png') center center no-repeat !important;
+    transform: rotate(-90deg)
 }
 
 .bx-wrapper .bx-prev {
-    left: -10px;
+    left: -30px;
 }
 
 .bx-wrapper .bx-next {
-    right: -10px;
+    right: -30px;
 }
 
 .slider__slide {
@@ -221,4 +227,8 @@
     align-items: center;
     justify-content: center;
     height: 700px;
+
+    @include laptop() {
+        flex-wrap: wrap;
+    }
 }

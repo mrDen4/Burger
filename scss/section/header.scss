@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   position: absolute;
+  top: 0;
 }
 
 .header__menu {
@@ -38,7 +39,7 @@
   position: relative;
 
   &:before {
-    color: red;
+    color: white;
     content: '•';
     top: 1px;
     left: -15px;

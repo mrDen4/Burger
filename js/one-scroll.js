@@ -7,7 +7,7 @@ const isMobile = mobileDetect.mobile();
 
 const setActiveMenuItem = itemEq => {
   $('.side-nav__el').eq(itemEq).addClass('side-nav__active')
-    .siblings().removeClass('side-nav__active')
+    .siblings().removeClass('side-nav__active');
 } 
 
 const performTransition = sectionEq => {

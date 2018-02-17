@@ -77,7 +77,7 @@ ul {
   position: relative;
   overflow: hidden; }
 
-.maincontent {
+.main {
   height: 100%;
   min-height: 650px;
   position: relative;
@@ -274,9 +274,13 @@ ul {
   height: 15px;
   background: url("../img/decor/arrow-scroll.png") center center no-repeat; }
 
+.onepage-pagination {
+  top: 15%; }
+
 .header {
   width: 100%;
-  position: absolute; }
+  position: absolute;
+  top: 0; }
 
 .header__menu {
   width: 25px;
@@ -310,7 +314,7 @@ ul {
   margin-left: 30px;
   position: relative; }
   .header__item:before {
-    color: red;
+    color: white;
     content: '•';
     top: 1px;
     left: -15px;
@@ -654,6 +658,9 @@ ul {
   -webkit-box-shadow: none;
   box-shadow: none;
   margin-bottom: 0; }
+  @media screen and (max-width: 992px) {
+    .bx-wrapper {
+      margin-top: 300px; } }
 
 .bx-wrapper .bx-controls-direction a {
   color: white;
@@ -663,16 +670,22 @@ ul {
   margin-top: -30px; }
 
 .bx-prev {
-  background: url("../img/decor/left-btn.png") center center no-repeat !important; }
+  background: url("../img/decor/arrow-scroll.png") center center no-repeat !important;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 .bx-next {
-  background: url("../img/decor/right-btn.png") center center no-repeat !important; }
+  background: url("../img/decor/arrow-scroll.png") center center no-repeat !important;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
 
 .bx-wrapper .bx-prev {
-  left: -10px; }
+  left: -30px; }
 
 .bx-wrapper .bx-next {
-  right: -10px; }
+  right: -30px; }
 
 .slider__slide {
   display: -webkit-box;
@@ -685,6 +698,10 @@ ul {
   -ms-flex-pack: center;
   justify-content: center;
   height: 700px; }
+  @media screen and (max-width: 992px) {
+    .slider__slide {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .best {
   background: url("../img/back/best-sec-bg.png") center center no-repeat;
