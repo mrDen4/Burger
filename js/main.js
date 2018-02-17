@@ -26,9 +26,14 @@ $(document).ready(() => {
     });
 
     //Team Accordion
-    $('.team__item-btn').on('click', e => {
-        var teamMore = $(e.currentTarget).next();           
-        $(teamMore).toggleClass('team__link-more--active');
+    $('.team__item-btn').on('click', function(){
+    if ( $(this).next().is(":visible")){
+    $(this).next().hide('slow');
+    }
+    else{
+    $('.team__link-more').hide('slow');
+    $(this).next().show('slow');
+    }
     });
 
     //Menu Accordion
@@ -36,6 +41,16 @@ $(document).ready(() => {
         var MenuAccordion = $(e.currentTarget).next();        
             $(MenuAccordion).toggleClass('menu__more--active');
     });
+
+    $('.menu__link-for').on('click', function(){
+        if ( $(this).next().is(":visible")){
+        $(this).next().hide('slow');
+        }
+        else{
+        $('.menu__more').hide('slow');
+        $(this).next().show('slow');
+        }
+        });
 
     //Slider
     $('.slider').bxSlider({

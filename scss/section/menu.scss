@@ -67,8 +67,9 @@
   background-color: $black;
   opacity: .9;
   width: rem(540px); 
-  width: 0;
-  overflow: hidden;
+  // width: 0;
+  // overflow: hidden;
+  display: none;
 
   // &-meat {
   //   width: 0;

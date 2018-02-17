@@ -851,8 +851,7 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 40px;
-  height: 0;
-  overflow: hidden; }
+  display: none; }
 
 .team__link-more--active {
   height: 95px;
@@ -943,8 +942,7 @@ ul {
   background-color: #2f3234;
   opacity: .9;
   width: 33.75rem;
-  width: 0;
-  overflow: hidden; }
+  display: none; }
 
 .menu__more-text {
   font-family: 'Ubuntu-Light', Arial, serif;
