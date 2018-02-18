@@ -23,6 +23,10 @@ $(document).ready(() => {
     $('.header__menu').on('click', e => {
         $('.natural__burger-menu').toggleClass('natural__burger-menu--active');
         $('.header__menu').toggleClass('header__menu--active');
+        $('body').toggleClass('.fixed');
+        $('body').on('scroll', e => {
+            e.preventDefault();
+        })
     });
 
     //Team Accordion

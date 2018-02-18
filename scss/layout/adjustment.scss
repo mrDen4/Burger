@@ -20,6 +20,13 @@
   width: 100vw;
 }
 
+.fixed {
+  position:fixed; /*позицианируем чтобы исчез скролл*/
+  width:100%; /*что бы верстка не складывалась по ширине*/
+  position:fixed;
+  overflow:hidden;
+  }
+
 
 .container {
   width: 95%;
