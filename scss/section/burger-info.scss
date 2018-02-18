@@ -132,10 +132,15 @@
     height: 60px;
 }
 
-.slide__decor-img {
-    background: url(../img/decor/dark-beef.png) center center no-repeat;
-    width: 450px;
-    height: 335px;
+// .slide__decor-img {
+//     background: url(../img/decor/dark-beef.png) center center no-repeat;
+//     width: 450px;
+//     height: 335px;
+// }
+
+.slide__img {
+    width: 70%;
+    margin-top: 80px;
 }
 
 .slide__content {
@@ -226,7 +231,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 700px;
+    height: 720px;
 
     @include laptop() {
         flex-wrap: wrap;
