@@ -34,25 +34,25 @@
                     <nav class="nav">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a href="#" class="header__item-link">О нас</a>
+                                <a href="#2" class="header__item-link" data-index="2">О нас</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__item-link">Бургеры</a>
+                                <a href="#3" class="header__item-link" data-index="3">Бургеры</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__item-link">Команда</a>
+                                <a href="#4" class="header__item-link" data-index="4">Команда</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__item-link">Меню</a>
+                                <a href="#5" class="header__item-link" data-index="5">Меню</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__item-link">Отзывы</a>
+                                <a href="#6" class="header__item-link" data-index="6">Отзывы</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__item-link">Контакты</a>
+                                <a href="#7" class="header__item-link" data-index="7">Контакты</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__item-link">
+                                <a href="#8" class="header__item-link" data-index="8">
                                     <div class="header__item-link-btn">Заказать</div>
                                 </a>
                             </li>
@@ -144,6 +144,52 @@
                                         <use xlink:href="img/svg/sprite/content.svg#burger"></use>
                                     </svg>
                                     состав
+                                </div>
+                                <div class="slide__decor-window">
+                                    <ul class="slide__decor-list">
+                                        <li class="slide__decor-item">
+                                            <svg class="slide__window-svg">
+                                                <use xlink:href="img/svg/sprite/content.svg#beef"></use>
+                                            </svg>
+                                            <span class="slide__decor-name">Говядина</span>
+                                            <span class="slide__decor-gramm">300г</span>
+                                        </li>
+                                        <li class="slide__decor-item">
+                                            <svg class="slide__window-svg">
+                                                <use xlink:href="img/svg/sprite/content.svg#buns"></use>
+                                            </svg>
+                                            <span class="slide__decor-name">Булочки</span>
+                                            <span class="slide__decor-gramm">100г</span>
+                                        </li>
+                                        <li class="slide__decor-item">
+                                            <svg class="slide__window-svg">
+                                                <use xlink:href="img/svg/sprite/content.svg#natural"></use>
+                                            </svg>
+                                            <span class="slide__decor-name">Зелень</span>
+                                            <span class="slide__decor-gramm">70г</span>
+                                        </li>
+                                        <li class="slide__decor-item">
+                                            <svg class="slide__window-svg">
+                                                <use xlink:href="img/svg/sprite/content.svg#sauce"></use>
+                                            </svg>
+                                            <span class="slide__decor-name">Соус</span>
+                                            <span class="slide__decor-gramm">150г</span>
+                                        </li>
+                                        <li class="slide__decor-item">
+                                            <svg class="slide__window-svg">
+                                                <use xlink:href="img/svg/sprite/content.svg#cucumber"></use>
+                                            </svg>
+                                            <span class="slide__decor-name">Овощи</span>
+                                            <span class="slide__decor-gramm">200г</span>
+                                        </li>
+                                        <li class="slide__decor-item">
+                                            <svg class="slide__window-svg">
+                                                <use xlink:href="img/svg/sprite/content.svg#cheese"></use>
+                                            </svg>
+                                            <span class="slide__decor-name">Сыр</span>
+                                            <span class="slide__decor-gramm">80г</span>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="slide__decor-kkal">
                                     <svg class="kkal__svg">
@@ -290,12 +336,19 @@
             </div>
         </section>
         <section class="section staff">
+            <div class="staff__popup-bg"></div>
+            <div class="staff__popup">
+                <h2 class="popup-title">Константин Спилберг</h2>
+                <p class="popup-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                        могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                        <button type="button" class="popup__btn"></button>
+            </div>
             <div class="staff__ava staff__ava-1" style="background-image: url('img/ava/1.png')">
                 <div class="staff__ava-more">
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff__ava-btn">Подробнее</button>
+                    <button type="button" class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
             <div class="staff__ava staff__ava-2" style="background-image: url('img/ava/2.png')">
@@ -303,7 +356,7 @@
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff__ava-btn">Подробнее</button>
+                    <button type="button" class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
             <div class="staff__ava staff__ava-3" style="background-image: url('img/ava/3.png')">
@@ -311,7 +364,7 @@
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff__ava-btn">Подробнее</button>
+                    <button type="button" class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
             <div class="staff__ava staff__ava-4" style="background-image: url('img/ava/4.png')">
@@ -319,7 +372,7 @@
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff__ava-btn">Подробнее</button>
+                    <button type="button" class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
             <div class="staff__ava staff__ava-5" style="background-image: url('img/ava/5.png')">
@@ -327,7 +380,7 @@
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff__ava-btn">Подробнее</button>
+                    <button type="button" class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
             <div class="staff__ava staff__ava-6" style="background-image: url('img/ava/6.png')">
@@ -335,7 +388,7 @@
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff__ava-btn">Подробнее</button>
+                    <button type="button" class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
             <div class="staff__ava staff__ava-7" style="background-image: url('img/ava/7.png')">
@@ -343,7 +396,7 @@
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff__ava-btn">Подробнее</button>
+                    <button type="button" class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
             <div class="staff__ava staff__ava-8" style="background-image: url('img/ava/8.png')">
@@ -351,7 +404,7 @@
                     <h2 class="staff__ava-tittle">Константин Спилберг</h2>
                     <p class="staff__ava-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <button class="staff__ava-btn">Подробнее</button>
+                    <button type="button" class="staff__ava-btn">Подробнее</button>
                 </div>
             </div>
         </section>
@@ -432,7 +485,7 @@
                 </div>
                 <div class="delivery__bg"></div>
                 <div class="delivery__msg">
-                    <button class="delivery__msg-btn">Отправить</button>
+                    <button type="button" class="delivery__msg-btn">Закрыть</button>
                 </div>
             </div>
         </section>

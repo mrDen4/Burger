@@ -5,49 +5,11 @@
     justify-content: center;
 }
 
-.burger-info__btn-left {
-    cursor: pointer;
-    z-index: 10;
-    background: none;
-    border: none;
-    position: absolute;
-    left: 5%;
-    fill: white;
-    transform: rotate(90deg);
-
-    .btn-left__svg {
-    width: 30px;
-    height: 17px;
-    }
-}
-
-
-
-.burger-info__btn-right {
-    cursor: pointer;
-    z-index: 10;
-    background: none;
-    border: none;
-    position: absolute;
-    right: 5%;
-    fill: white;
-    width: 30px;
-    height: 17px;
-    transform: rotate(-90deg);
-
-    .btn-right__svg {
-        width: 30px;
-        height: 17px;
-}
-}
-
-
-
 .burger-info__slide {
     position: relative;
     display: flex;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     min-height: 475px;
 
@@ -74,7 +36,7 @@
     cursor: pointer;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 1px;
     width: 90px;
     height: 90px;
     border-radius: 5px;
@@ -85,15 +47,50 @@
     align-items: center;
     justify-content: center;
     text-decoration: uppercase;
-
-    @include laptop() {
-        left: 10%;
-    }
 }
 
 .composition__svg {
     width: 45px;
     height: 45px;
+}
+
+.slide__decor-window {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 90px;
+    width: 280px;
+    height: 340px;
+    background: white;
+    opacity: .7;
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.slide__decor-gramm {
+    margin: 20px 20px;
+    
+}
+
+.slide__decor-item {
+    display: flex;
+    justify-content: space-between;
+    // justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.slide__decor-gramm {
+    margin-left: auto;
+}
+
+.slide__window-svg {
+    width: 45px;
+    height: 45px;
+    margin: 0 25px;
 }
 
 .slide__decor-kkal {
@@ -115,10 +112,14 @@
     opacity: .5;
 
     @include laptop() {
-        left: 70%;
+        left: 80%;
         bottom: 100%;
         top: 0px;
         right: 0px;
+    }
+
+    @include phones() {
+        left: 80%;
     }
 }
 
@@ -191,7 +192,7 @@
     margin-bottom: 0;
 
     @include laptop() {
-        margin-top: 300px;;
+        margin-top: 430px;
     }
 }
 
@@ -225,9 +226,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 720px;
+    height: 800px;
 
     @include laptop() {
         flex-wrap: wrap;
+        height: 800px;
     }
 }

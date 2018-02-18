@@ -62,6 +62,11 @@ $(document).ready(() => {
         prevText: ''
     });
 
+    //Composition for slider
+    $('.slide__decor-composition').on('click', e => {
+        $(e.currentTarget).next().toggleClass('slide__decor-window--active')
+    });
+
     //Send Forms
     $('#delivery-form').on('submit', submitForm);
 
@@ -78,19 +83,23 @@ $(document).ready(() => {
             status = msg.status;
 
             if (status === 'ok') {
-                $('.delivery__bg').toggleClass('.delivery__bg--active');
-                $('.delivery__msg').toggleClass('.delivery__msg--active');
+                $('.delivery__bg').toggleClass('delivery__bg--active');
+                $('.delivery__msg').toggleClass('delivery__msg--active');
                 $('.delivery__msg').append('<p class="delivery__msg--success">' + mes + '</p>');
             } else{
-                $('.delivery__bg').toggleClass('.delivery__bg--active');
-                $('.delivery__msg').toggleClass('.delivery__msg--active');
+                $('.delivery__bg').toggleClass('delivery__bg--active');
+                $('.delivery__msg').toggleClass('delivery__msg--active');
                 $('.delivery__msg').append('<p class="delivery__msg--error">' + mes + '</p>');
             }
     }).fail(function(jqXHR, textStatus) {
         alert("Request failed: " + textStatus);
     });
-}
 
+    $('.delivery__msg-btn').on('click', e => {
+        $('.delivery__bg').toggleClass('delivery__bg--active');
+        $('.delivery__msg').toggleClass('delivery__msg--active');
+    });
+};
 
 //Общая функция для форм на стр
     var ajaxForm = function (form) {
@@ -104,4 +113,15 @@ $(document).ready(() => {
         data: data
     })
 };
+});
+
+//POPUP
+$('.staff__ava-btn').on('click', e => {
+    $('.staff__popup').toggleClass('staff__popup--active');
+    $('.staff__popup-bg').toggleClass('staff__popup-bg--active');
+});
+
+$('.popup__btn').on('click', e => {
+    $('.staff__popup').toggleClass('staff__popup--active');
+    $('.staff__popup-bg').toggleClass('staff__popup-bg--active');
 });
