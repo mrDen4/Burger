@@ -78,9 +78,13 @@ $(document).ready(() => {
             status = msg.status;
 
             if (status === 'ok') {
-                form.append('<p class="success">' + mes + '</p>');
+                $('.delivery__bg').toggleClass('.delivery__bg--active');
+                $('.delivery__msg').toggleClass('.delivery__msg--active');
+                $('.delivery__msg').append('<p class="delivery__msg--success">' + mes + '</p>');
             } else{
-                form.append('<p class="error">' + mes + '</p>');
+                $('.delivery__bg').toggleClass('.delivery__bg--active');
+                $('.delivery__msg').toggleClass('.delivery__msg--active');
+                $('.delivery__msg').append('<p class="delivery__msg--error">' + mes + '</p>');
             }
     }).fail(function(jqXHR, textStatus) {
         alert("Request failed: " + textStatus);

@@ -47,7 +47,7 @@
 
     if ($mail) {
         $data['status'] = 'ok';
-        $data['mes'] = 'Заказ принят';
+        $data['mes'] = 'Сообщение отправлено';
     }else{
         $data['status'] = 'no';
         $data['mes'] = 'Проблемы с формой';

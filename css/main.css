@@ -1034,7 +1034,8 @@ ul {
 
 .delivery {
   background: url("../img/back/delivery.png");
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .delivery__tittle {
   margin-bottom: 2.75rem;
@@ -1129,6 +1130,35 @@ ul {
   font-family: 'Ubuntu-Light', Arial, serif;
   text-transform: none;
   font-size: 0.875rem; }
+
+.delivery__bg {
+  position: absolute;
+  background: black;
+  opacity: .5;
+  width: 100vw;
+  height: 100vh;
+  display: none; }
+  .delivery__bg--active {
+    display: initial; }
+
+.delivery__msg {
+  position: absolute;
+  right: 30%;
+  border-radius: 5px;
+  background: white;
+  width: 200px;
+  height: 100px;
+  display: none; }
+  .delivery__msg--success {
+    color: green; }
+  .delivery__msg--error {
+    color: red; }
+  .delivery__msg-btn {
+    position: absolute;
+    left: 54px;
+    top: 52px; }
+  .delivery__msg--active {
+    display: initial; }
 
 .map {
   background-size: cover;

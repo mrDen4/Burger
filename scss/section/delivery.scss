@@ -1,6 +1,7 @@
 .delivery {
   background: url("../img/back/delivery.png");
   background-size: cover;
+  position: relative;
 }
 
 .delivery__tittle {
@@ -138,4 +139,46 @@
   font-family: 'Ubuntu-Light', Arial, serif;
   text-transform: none;
   font-size: rem(14px);
+}
+
+.delivery__bg {
+  position: absolute;
+  background: black;
+  opacity: .5;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+
+  &--active {
+    display: initial;
+  }
+}
+
+.delivery__msg {
+  position: absolute;
+  right: 30%;
+  border-radius: 5px;
+  background: white;
+  width: 200px;
+  height: 100px;
+  display: none;
+  
+
+  &--success {
+    color: green;
+  }
+
+  &--error {
+    color: red;
+  }
+
+  &-btn {
+    position: absolute;
+    left: 54px;
+    top: 52px;
+  }
+
+  &--active {
+    display: initial;
+  }
 }
