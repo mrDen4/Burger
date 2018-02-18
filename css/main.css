@@ -1004,6 +1004,7 @@ ul {
   position: absolute;
   width: 460px;
   height: 260px;
+  padding: 20px;
   background: white;
   border-radius: 5px;
   top: 37%;
@@ -1017,6 +1018,14 @@ ul {
       right: 5px; } }
   .staff__popup--active {
     display: block; }
+
+.popup-title {
+  font-family: 'gagalin', Arial, Helvetica, sans-serif;
+  font-size: 0.875rem; }
+
+.popup-text {
+  font-family: 'Ubuntu-Light', Arial, serif;
+  font-size: 0.875rem; }
 
 .staff__ava {
   width: 25%;
