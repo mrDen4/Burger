@@ -29,7 +29,7 @@ $(document).ready(() => {
     $('.header__menu').on('click', e => {
         $('.natural__burger-menu').toggleClass('natural__burger-menu--active').addClass('animated fadeInUp');
         $('.header__menu').toggleClass('header__menu--active').addClass('animated rotateIn');;
-        $('body').toggleClass('.fixed');
+        $('body').toggleClass('fixed');
         $('body').on('scroll', e => {
             e.preventDefault();
         })
