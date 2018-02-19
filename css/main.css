@@ -275,7 +275,9 @@ ul {
   justify-content: center;
   position: absolute;
   bottom: 5%;
-  right: 50%; }
+  right: 50%;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite; }
 
 .bot-scroll__scroll-logo {
   width: 30px;

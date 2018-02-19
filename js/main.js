@@ -21,8 +21,8 @@ $(document).ready(() => {
 
     //Hamburger Menu
     $('.header__menu').on('click', e => {
-        $('.natural__burger-menu').toggleClass('natural__burger-menu--active');
-        $('.header__menu').toggleClass('header__menu--active');
+        $('.natural__burger-menu').toggleClass('natural__burger-menu--active').addClass('animated fadeInUp');
+        $('.header__menu').toggleClass('header__menu--active').addClass('animated rotateIn');;
         $('body').toggleClass('.fixed');
         $('body').on('scroll', e => {
             e.preventDefault();
@@ -64,7 +64,7 @@ $(document).ready(() => {
 
     //Composition for slider
     $('.slide__decor-composition').on('click', e => {
-        $(e.currentTarget).next().toggleClass('slide__decor-window--active')
+        $(e.currentTarget).next().toggleClass('slide__decor-window--active').toggleClass('animated flipInY');
     });
 
     //Send Forms
@@ -117,7 +117,7 @@ $(document).ready(() => {
 
 //POPUP
 $('.staff__ava-btn').on('click', e => {
-    $('.staff__popup').toggleClass('staff__popup--active');
+    $('.staff__popup').toggleClass('staff__popup--active').addClass('animated zoomIn');
     $('.staff__popup-bg').toggleClass('staff__popup-bg--active');
 });
 
@@ -125,3 +125,7 @@ $('.popup__btn').on('click', e => {
     $('.staff__popup').toggleClass('staff__popup--active');
     $('.staff__popup-bg').toggleClass('staff__popup-bg--active');
 });
+
+//Animate.css
+
+$('.bot-scroll__link-next').addClass('animated bounce');
