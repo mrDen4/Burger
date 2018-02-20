@@ -957,7 +957,8 @@ ul {
   background-color: #2f3234;
   opacity: .9;
   width: 33.75rem;
-  display: none; }
+  display: none;
+  padding: 0 15px; }
 
 .menu__more-text {
   font-family: 'Ubuntu-Light', Arial, serif;
@@ -1065,17 +1066,29 @@ ul {
     -ms-flex-pack: center;
     justify-content: center;
     opacity: 0; }
+    @media screen and (max-width: 800px) {
+      .staff__ava-more {
+        max-height: 12.5rem; } }
   .staff__ava-tittle {
     font-family: 'gagalin', Arial, serif;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: 400;
-    color: white; }
+    color: white;
+    text-align: center; }
+    @media screen and (max-width: 800px) {
+      .staff__ava-tittle {
+        margin-top: 0;
+        margin-bottom: 5px; } }
   .staff__ava-text {
     font-family: 'Ubuntu-Light', Arial, serif;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: 300;
     color: white;
     line-height: 1.5rem; }
+    @media screen and (max-width: 800px) {
+      .staff__ava-text {
+        margin-top: 0;
+        margin-bottom: 10px; } }
   .staff__ava-btn {
     width: 6.875rem;
     height: 2.1875rem;

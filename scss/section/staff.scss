@@ -89,21 +89,36 @@
     flex-direction: column;
     justify-content: center;
     opacity: 0;
+
+    @include tablets() {
+      max-height: rem(200px);
+    }
   }
 
   &-tittle {
     font-family: 'gagalin', Arial, serif;
-    font-size: rem(14px);
+    font-size: 14px;
     font-weight: 400;
     color: white;
+    text-align: center;
+
+    @include tablets() {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
   }
 
   &-text {
     font-family: 'Ubuntu-Light', Arial, serif;
-    font-size: rem(14px);
+    font-size: 14px;
     font-weight: 300;
     color: white;
     line-height: rem(24px);
+
+    @include tablets() {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &-btn {
